@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConfiguracaoFase" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhABQgAEAAAQEQCAEAAAgAAIjAAoAAAQIAAAAIAEARA=</HashCode>
+      <FileName>Assets\Scripts\framework\ConfiguracaoFase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DragAndDrop" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAEAAAABAEAADAAAAADAQAAAAAAAAEEA=</HashCode>
+      <FileName>Assets\Scripts\framework\DragAndDrop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="EventoDrop" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAIAAAIAAAAAAAAAAEAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\framework\EventoDrop.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Fase" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQBAgAAACAAAAAAAAAAAAAAEAQAQBQQAAABAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\framework\Fase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FaseLayoutFixo" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARQBIgAAACAAAAAAAAAAAAAAEAQAQBQQAAABAIEAAEA=</HashCode>
+      <FileName>Assets\Scripts\framework\FaseLayoutFixo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Nivel" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\framework\Nivel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrocarCenaImagem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\framework\TrocarCenaImagem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Assets.Scripts.framework.Genericos" Collapsed="true">
+    <Position X="13.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\framework\Genericos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfiguracaoFaseUmItem" Collapsed="true">
+    <Position X="5.5" Y="2" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AhABQgAEAAAQEQCAEAAAgAAAjAAoAAAQIAAAAIAEARA=</HashCode>
+      <FileName>Assets\Scripts\framework\UmItem\ConfiguracaoFaseUmItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FaseLayoutFixoUmItem" Collapsed="true">
+    <Position X="5.5" Y="1" Width="4" />
+    <TypeIdentifier>
+      <HashCode>ARQBIgAAACBAAAAAAAAAAAAAEAQAQBQQAAAAAIEAAEA=</HashCode>
+      <FileName>Assets\Scripts\framework\UmItem\FaseLayoutFixoUmItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
