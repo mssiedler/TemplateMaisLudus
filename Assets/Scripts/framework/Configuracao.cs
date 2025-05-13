@@ -39,6 +39,7 @@ namespace Ludus.SDK.Framework
         private GameObject preFabObjeto, preFabSombra;
 
         public TextMeshProUGUI txtLegenda;
+        public bool temLegendaObjeto, temLegendaAuxiliar;
         public virtual void CarregarConfiguracao(GameObject novoPainelGeral)
         {
             if (inicial)

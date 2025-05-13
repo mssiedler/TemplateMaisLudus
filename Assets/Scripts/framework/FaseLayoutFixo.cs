@@ -56,13 +56,27 @@ namespace Ludus.SDK.Framework
                                 audiosSourceSombraAuxiliar[i].clip = audiosAuxiliar[indiceSelecionado[i]];
                             }
                         }
+                        //LEGENDAS
+                        try
+                        {
+                            if (this.temLegendaAuxiliar) 
+                            {
+                                imgsSombraAuxiliar[i].GetComponent<EventoSombra>().legenda = this.textosAuxiliar[indiceSelecionado[i]];
+                            }
+                        }
+                        catch (System.Exception ex)
+                        {
+
+                            Debug.LogError("[+LUDUS] erro ao carregar a legenda do conteúdo auxiliar");
+                            Debug.LogException(ex);
+                        }
                         
                     }
                 }
             }
             catch (System.Exception ex)
             {
-                Debug.LogError("[+LUDUS] erro ao carregar o conteúdo  da sobra");
+                Debug.LogError("[+LUDUS] erro ao carregar o conteúdo da sobra");
                 Debug.LogException(ex);
             }
 
@@ -92,7 +106,7 @@ namespace Ludus.SDK.Framework
                 catch (System.Exception)
                 {
 
-                    Debug.LogWarning("[+LUDUS] áudio SOurce não encontrado no prefab sombra");
+                    Debug.LogWarning("[+LUDUS] áudio Source não encontrado no prefab sombra");
                     audiosSourceSombraAuxiliar = null;
                 }
             }

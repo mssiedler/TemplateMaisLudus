@@ -13,6 +13,9 @@ namespace Ludus.SDK.Framework
         private AudioSource audioSourceSombraAuxiliar;
         private Image imgSombra;
         private Image imgAuxiliar;
+        //esse evento sombra foi adicionado para, se for o caso, conseguir adicionar a
+        //legenda
+        private EventoSombra eventoSombra;
 
         void Start()
         {
@@ -59,6 +62,11 @@ namespace Ludus.SDK.Framework
                             audioSourceSombraAuxiliar.clip = audiosAuxiliar[indiceSelecionado[0]];
                         }
                     }
+                    if (this.temLegendaAuxiliar) 
+                    { 
+                        eventoSombra.legenda = this.textosAuxiliar[indiceSelecionado[0]];
+                    }
+                    
                 }
             }
             catch (System.Exception ex)
@@ -90,6 +98,7 @@ namespace Ludus.SDK.Framework
 
                 imgSombra = imagens[0];
                 imgAuxiliar = imagens[1];
+                eventoSombra = sombra.GetComponentInChildren<EventoSombra>();
 
                 try
                 {
@@ -101,6 +110,7 @@ namespace Ludus.SDK.Framework
                     Debug.LogWarning("[+LUDUS] áudio Source não encontrado no prefab sombra");
                     audioSourceSombraAuxiliar = null;
                 }
+                
             }
             else
             {

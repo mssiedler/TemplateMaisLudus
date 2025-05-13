@@ -12,6 +12,9 @@ namespace Ludus.SDK.Framework
         public GameObject continueButton;
         public GameObject animationButton;
         private AudioSource audioSource;
+        //legenda
+        public string legenda;
+
         private void Start()
         {
             // continueButton.SetActive(false);
@@ -21,15 +24,30 @@ namespace Ludus.SDK.Framework
                 audioSource = gameObject.GetComponentInChildren<AudioSource>();
                 Button btn = gameObject.GetComponentInChildren<Button>();
 
-                btn.onClick.AddListener(tocarSomAuxiliar);
+                btn.onClick.AddListener(EventoCliqueAuxiliar);
             }
 
         }
 
 
-        public void tocarSomAuxiliar()
+        public void EventoCliqueAuxiliar()
         {
             audioSource.Play();
+            if (Controle.configuracao.temLegendaAuxiliar) 
+            {
+                try
+                {
+                    if (this.legenda != null && Controle.configuracao.txtLegenda != null)
+                    {
+                        Controle.configuracao.txtLegenda.text = this.legenda;
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogError("[+LUDUS - EventoCliqueAuxiliar] Erro ao carregar a legenda do conteúdo auxiliar");
+                    Debug.LogException(ex);
+                }
+            }
         }
 
 

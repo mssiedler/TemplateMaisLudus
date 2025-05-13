@@ -39,6 +39,9 @@ namespace Ludus.SDK.Framework
         //Legenda
         protected TextMeshProUGUI txtLegenda;
         string[] textos;
+        protected string[] textosAuxiliar;
+
+        protected bool temLegendaObjeto, temLegendaAuxiliar;
         void Start()
         {
 
@@ -109,6 +112,8 @@ namespace Ludus.SDK.Framework
                 Controle.configuracao.sombraAuxiliarAltura = this.sombraAuxiliarAltura;
                 Controle.configuracao.sombraAuxiliarLargura = this.sombraAuxiliarLargura;
                 Controle.configuracao.txtLegenda = this.txtLegenda;
+                
+
 
                 //carrega as configurações da fase
                 Controle.configuracao.CarregarConfiguracao(painel);
@@ -149,17 +154,20 @@ namespace Ludus.SDK.Framework
                 Debug.LogException(ex);
                 return;
             }
-            //busca o conteúdo da legenda, caso exista
+            #region legendaObjeto
+            //busca o conteúdo da legenda do objeto, caso exista
             try
             {
                 TextAsset texto = Resources.Load<TextAsset>("fases/" + pasta + "/texto");
                 if (texto != null)
                 {
+                    this.temLegendaObjeto = true;
                     textos = texto.text.Split(";");
                 }
                 else
                 {
-                    Debug.LogError("Arquivo não encontrado.");
+                    this.temLegendaObjeto = false;
+                    Debug.LogWarning("[+LUDUS] Nenhuma Legenda para o Objeto");
                 }
             }
             catch (System.Exception)
@@ -167,6 +175,8 @@ namespace Ludus.SDK.Framework
 
                 throw;
             }
+            
+            #endregion
 
             if (Controle.configuracao.substituirObjetoAoParear)
             {
@@ -218,6 +228,28 @@ namespace Ludus.SDK.Framework
                     Debug.LogWarning("[+LUDUS] Áudios auxiliares não encontrados. Caso estejam na pasta verifique se a pasta fases/" + pasta + "/auxiliarsons existe dentro da pasta Resources");
                     audiosAuxiliar = null;
                 }
+                #region legendaauxiliar
+                //busca o conteúdo da legenda do conteúdo auxiliar, caso exista
+                try
+                {
+                    TextAsset texto = Resources.Load<TextAsset>("fases/" + pasta + "/textoAuxiliar");
+                    if (texto != null)
+                    {
+                        this.temLegendaAuxiliar = true;
+                        this.textosAuxiliar = texto.text.Split(";");
+                    }
+                    else
+                    {
+                        this.temLegendaAuxiliar = false;
+                        Debug.LogWarning("[+LUDUS] Nenhuma Legenda para o Conteúdo Auxiliar");
+                    }
+                }
+                catch (System.Exception)
+                {
+                    Debug.LogWarning("[+LUDUS] Nenhuma Legenda para o Conteúdo Auxiliar - erro ao carregar o textoAuxiliar");
+
+                }
+                #endregion
 
             }
 
@@ -233,6 +265,10 @@ namespace Ludus.SDK.Framework
                 Debug.LogError("[+LUDUS] spritesSombra não definido");
                 return;
             }
+
+            //atualiza o booleano de legenda, para facilitar posteriormente a verificação
+            Controle.configuracao.temLegendaAuxiliar = this.temLegendaAuxiliar;
+            Controle.configuracao.temLegendaObjeto = this.temLegendaObjeto;
 
 
 
@@ -292,11 +328,19 @@ namespace Ludus.SDK.Framework
                 int selecionado = this.IndiceNovo(indiceSelecionado);
                 imgsObjeto[i].sprite = spritesObjeto[selecionado];
                 //se tem legenda, habilita
-                if(this.txtLegenda!=null)
+                if(this.temLegendaObjeto)
                 {
-        
-                    imgsObjeto[i].GetComponent<DragAndDrop>().legenda=this.textos[selecionado];
-                }
+                    try
+                    {
+                        imgsObjeto[i].GetComponent<DragAndDrop>().legenda = this.textos[selecionado];
+
+                    }
+                    catch (System.Exception)
+                    {
+                        Debug.LogError("[+LUDUS] Erro ao atribuir a legenda no índice: " + i.ToString() 
+                            + " . Verifice se o arquivo de texto está corretamente formatado e com o número de palavras condizente com as imagens correspondentes(se tem 10 imagens são necessários 10 textos).");                        
+                    }
+                   }
                 if (substituirObjetoAoParear)
                 {
                     imgsObjetoPareado[i].sprite = spritesObjetoPareado[selecionado];

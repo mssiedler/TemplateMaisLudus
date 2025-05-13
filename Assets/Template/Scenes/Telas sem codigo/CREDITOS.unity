@@ -361,7 +361,6 @@ GameObject:
   - component: {fileID: 1058531166}
   - component: {fileID: 1058531171}
   - component: {fileID: 1058531170}
-  - component: {fileID: 1058531172}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -492,18 +491,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058531165}
   m_CullTransparentMesh: 1
---- !u!114 &1058531172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1058531165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dc845262af53224fb511e428f919acc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1178351949
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +908,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56, y: 290}
+  m_AnchoredPosition: {x: -53.045, y: 235.67}
   m_SizeDelta: {x: 474.5, y: 74.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364203548
@@ -944,7 +931,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CR\xC9DITOS"
+  m_text: "CR\xC9DITOS:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 38d54451e36075f478b35278b0cc9f46, type: 2}
   m_sharedMaterial: {fileID: -2938824346410726951, guid: 38d54451e36075f478b35278b0cc9f46, type: 2}
@@ -1371,38 +1358,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1058531169}
     m_Modifications:
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1058531172}
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CarregarCena
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Ludus.SDK.Framework.Genericos, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Inicial
-      objectReference: {fileID: 0}
-    - target: {fileID: 1792181347687210073, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 5220807612586929344, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1465,11 +1420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5220807612586929344, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -474
+      value: -506
       objectReference: {fileID: 0}
     - target: {fileID: 5220807612586929344, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 293
+      value: 184
       objectReference: {fileID: 0}
     - target: {fileID: 5220807612586929344, guid: f940b96981a8c9c4da2d12b517997d95, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

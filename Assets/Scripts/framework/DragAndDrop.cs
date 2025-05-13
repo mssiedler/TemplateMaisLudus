@@ -42,10 +42,22 @@ namespace Ludus.SDK.Framework
             if (audio.clip != null)
                 audio.Play();
             //verifica se tem legenda
-            
-            if(this.legenda!=null && Controle.configuracao.txtLegenda!=null)
+            if(Controle.configuracao.temLegendaObjeto)
             {
-                Controle.configuracao.txtLegenda.text = this.legenda;    
+                try
+                {
+                    if (this.legenda != null && Controle.configuracao.txtLegenda != null)
+                    {
+                        Controle.configuracao.txtLegenda.text = this.legenda;
+                    }
+                }
+                catch (System.Exception ex)
+                {
+                    Debug.LogError("Erro ao carregar o objeto de legenda. Está nulo, inexistente ou mal definido na cena.");
+                    Debug.LogError(ex.GetBaseException());
+                }
+                
+
             }
         }
 
@@ -59,10 +71,26 @@ namespace Ludus.SDK.Framework
         {
             grupo.alpha = 1f;
             grupo.blocksRaycasts = true;
-            //Se o colou certo for diferente de true, o objeto arrastado volta para a posição inicial
+            //Se o colou certo for diferente de true,
+            //o objeto arrastado volta para a posição inicial
+            //este colou certo vem do eventoSombra
             if (colouCerto == false)
             {
-                Controle.configuracao.TocarSom('E');   //caso tenha na pasta de sons, tocar som de erro
+                // Aqui vou verificar se ele realmente tentou para dar a mensagem de áudio
+                //Por tentar eu quero saber se ele largou dentro de uma sombra ou se ele nem conseguiu
+                //chegar lá, nesse caso não foi erro e sim problema para colocar no lugar, 
+                //ai não vou dar o áudio de erro
+                GameObject alvo = eventData.pointerEnter;
+                if (alvo != null) {
+                    if (alvo.name.Contains("sombra"))
+                    {
+                        //AQUI SIM configura um erro, então toca o som (se tiver na pasta)
+                        Controle.configuracao.TocarSom('E');   
+                    }
+                    
+                }
+
+                
                 rt.anchoredPosition = posicaoOriginal;
             }
 

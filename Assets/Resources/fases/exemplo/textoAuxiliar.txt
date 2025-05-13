@@ -1,0 +1,1 @@
+Amarelo;Branco;Laranja;Rosa;Verde;Vermelho;Azul;Azul Claro

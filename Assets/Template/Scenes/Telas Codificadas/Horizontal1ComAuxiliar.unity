@@ -269,7 +269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293190107560899905, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 43.79
+      value: 43.79001
       objectReference: {fileID: 0}
     - target: {fileID: 8293190107560899905, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -354,6 +354,14 @@ PrefabInstance:
     - target: {fileID: 8510521506697414854, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: pasta
+      value: exemplo
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: conteudoauxiliar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: niveis.Array.data[0].quantidadeElementos
