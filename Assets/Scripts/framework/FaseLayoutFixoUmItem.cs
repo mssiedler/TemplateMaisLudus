@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Ludus.SDK.Framework
 {
-    public class FaseLayoutFixoUmItem : FaseLayout
+    public class FaseLayoutFixoUmItem : FaseLayoutDivide
     {
 
         private AudioSource audioSourceSombraAuxiliar;
