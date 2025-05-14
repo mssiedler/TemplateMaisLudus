@@ -204,7 +204,7 @@ namespace Ludus.SDK.Framework
             catch (System.Exception)
             {
 
-                audiosObjeto =new List<AudioClip>();
+                audiosObjeto = null;
             }
 
             //se tem conteúdo auxiliar busca as imagens desse conteúdo e também, se for o caso, os sons desse conteúdo        
@@ -224,7 +224,7 @@ namespace Ludus.SDK.Framework
                 try
                 {
                     audiosAuxiliar = Resources.LoadAll<AudioClip>("fases/" + pasta + "/auxiliarSons").ToList<AudioClip>();
-					audiosAuxiliar = this.ordenarAudio(audiosAuxiliar);
+					//DIFF audiosAuxiliar = this.ordenarAudio(audiosAuxiliar);
                 }
                 catch (System.Exception)
                 {
