@@ -1,4 +1,5 @@
-using System.Collections.Generic;
+ï»¿
+  using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
@@ -10,26 +11,30 @@ namespace Ludus.SDK.Framework
 {
 
     public abstract class FaseLayoutDivide : MonoBehaviour
-    {
+     {
 
-        [Header("Configurações da Fase")]
+        [Header("ConfiguraÃ§Ãµes da Fase")]
         public Button botaoTrocaCena;
         public string pasta;
         public string cenaFinal;
         public List<Nivel> niveis;
-        [Header("Configurações - Auxiliar")]
+        [Header("ConfiguraÃ§Ãµes - Auxiliar")]
         public bool conteudoauxiliar;
         public bool substituirObjetoAoParear;
         public string sombraauxiliar = "sombraComAuxiliar";
 
-        [Header("Dimensões das Imagens")]
-        [Tooltip("Usar largura e altura padrão")]
+        [Header("DimensÃµes das Imagens")]
+        [Tooltip("Usar largura e altura padrÃ£o")]
         public bool usarDimensoesImagens = false;
         public int objetoLargura = 100, objetoAltura = 100, sombraLargura = 100, sombraAltura = 100;
         public int sombraAuxiliarLargura = 100, sombraAuxiliarAltura = 100;
         [Header("Monitoramento")]
         public bool monitorarCena;
-
+        [Header("DivisÃ£o do Sprite")]
+        public bool dividirSprite=false;
+        public bool exibirSequencial=false;
+        public int itensPorParte;
+        protected int atual=0;
 
         protected GameObject objeto;
         protected GameObject sombra;
@@ -62,7 +67,7 @@ namespace Ludus.SDK.Framework
         protected virtual void CarregarConfiguracao()
         {
             #region CarregarConfiguracao
-            //Carrega os painéis
+            //Carrega os painï¿½is
             try
             {
                 painel = GameObject.Find(this.gameObject.name.ToString());
@@ -86,18 +91,18 @@ namespace Ludus.SDK.Framework
             }
             catch (System.Exception ex)
             {
-                Debug.LogError("[+LUDUS] Erro ao instanciar as variáveis, verifique se os painéis estão dispostos de acordo com o preFab");
+                Debug.LogError("[+LUDUS] Erro ao instanciar as variï¿½veis, verifique se os painï¿½is estï¿½o dispostos de acordo com o preFab");
                 Debug.LogException(ex);
                 return;
             }
 
-            //Se habilitado, adiciona o monitoramento da cena atráves do script Monitor
+            //Se habilitado, adiciona o monitoramento da cena atrï¿½ves do script Monitor
             if (this.monitorarCena)
             {
                 this.gameObject.AddComponent<Monitor>();
             }
 
-            //associa os valores passados visualmente no painél pra classe estática de Controle
+            //associa os valores passados visualmente no painï¿½l pra classe estï¿½tica de Controle
             try
             {
 
@@ -105,7 +110,7 @@ namespace Ludus.SDK.Framework
 
                 if (this.niveis == null || this.cenaFinal == null)
                 {
-                    Debug.LogError("[+LUDUS] Erro ao carregar a configuração da fase. Verifique se os níveis e a cena final foram corretamente atribuídas no inspector do painel ");
+                    Debug.LogError("[+LUDUS] Erro ao carregar a configuraï¿½ï¿½o da fase. Verifique se os nï¿½veis e a cena final foram corretamente atribuï¿½das no inspector do painel ");
                     return;
                 }
 
@@ -126,14 +131,14 @@ namespace Ludus.SDK.Framework
 
 
 
-                //carrega as configurações da fase
+                //carrega as configuraï¿½ï¿½es da fase
                 Controle.configuracao.CarregarConfiguracao(painel);
 
 
             }
             catch (System.Exception ex)
             {
-                Debug.LogError("[+LUDUS] Erro ao carregar a fase, verifique as configurações.");
+                Debug.LogError("[+LUDUS] Erro ao carregar a fase, verifique as configuraï¿½ï¿½es.");
                 Debug.LogException(ex);
                 return;
             }
@@ -142,11 +147,11 @@ namespace Ludus.SDK.Framework
 
         protected virtual void CarregaAssetsPastas()
         {
-            //verifica se a variável pasta foi definida
+            //verifica se a variï¿½vel pasta foi definida
             if (string.IsNullOrEmpty(pasta))
             {
 
-                Debug.LogError("[+LUDUS] Variável pasta não defindida, verifique as variáveis do script e adicione a pasta corresponde aos sprites. Dica: procure na pasta Resources/fases e busque O NOME DA FASE DESEJADA");
+                Debug.LogError("[+LUDUS] Variï¿½vel pasta nï¿½o defindida, verifique as variï¿½veis do script e adicione a pasta corresponde aos sprites. Dica: procure na pasta Resources/fases e busque O NOME DA FASE DESEJADA");
                 return;
             }
 
@@ -161,12 +166,12 @@ namespace Ludus.SDK.Framework
             catch (System.Exception ex)
             {
 
-                Debug.LogError("[+LUDUS] Sprites não encontrados. Verifique se a pasta fases/" + pasta + "/objeto e fases/" + pasta + "/sombra existem dentro da pasta Resources, e se os os sprites estão corretamente divididos (multiple)");
+                Debug.LogError("[+LUDUS] Sprites nï¿½o encontrados. Verifique se a pasta fases/" + pasta + "/objeto e fases/" + pasta + "/sombra existem dentro da pasta Resources, e se os os sprites estï¿½o corretamente divididos (multiple)");
                 Debug.LogException(ex);
                 return;
             }
             #region legendaObjeto
-            //busca o conteúdo da legenda do objeto, caso exista
+            //busca o conteï¿½do da legenda do objeto, caso exista
             textos = this.CarregarAssets("texto", out this.temLegendaObjeto); 
             #endregion
 
@@ -188,12 +193,12 @@ namespace Ludus.SDK.Framework
                 audiosObjeto = new List<AudioClip>();
             }
 
-            //se tem conteúdo auxiliar busca as imagens desse conteúdo e também, se for o caso, os sons desse conteúdo        
+            //se tem conteï¿½do auxiliar busca as imagens desse conteï¿½do e tambï¿½m, se for o caso, os sons desse conteï¿½do        
             if (this.conteudoauxiliar)
             {
                 spritesAuxiliar = this.CarregarAssets<Sprite>("auxiliar");
 
-                //busca os sons auxiliares das sombras - caso não tenha atribui null a variável audiosAuxiliar
+                //busca os sons auxiliares das sombras - caso nï¿½o tenha atribui null a variï¿½vel audiosAuxiliar
                 try
                 {
                     audiosAuxiliar = this.CarregarAssets<AudioClip>("auxiliarSons");
@@ -202,32 +207,11 @@ namespace Ludus.SDK.Framework
                 catch (System.Exception)
                 {
 
-                    Debug.LogWarning("[+LUDUS] Áudios auxiliares não encontrados. Caso estejam na pasta verifique se a pasta fases/" + pasta + "/auxiliarsons existe dentro da pasta Resources");
+                    Debug.LogWarning("[+LUDUS] ï¿½udios auxiliares nï¿½o encontrados. Caso estejam na pasta verifique se a pasta fases/" + pasta + "/auxiliarsons existe dentro da pasta Resources");
                     audiosAuxiliar = null;
                 }
                 #region legendaauxiliar
-                //busca o conteúdo da legenda do conteúdo auxiliar, caso exista
-                try
-                {
-                    
-                    
-                    TextAsset texto = Resources.Load<TextAsset>("fases/" + pasta + "/textoAuxiliar");
-                    if (texto != null)
-                    {
-                        this.temLegendaAuxiliar = true;
-                        this.textosAuxiliar = texto.text.Split(";");
-                    }
-                    else
-                    {
-                        this.temLegendaAuxiliar = false;
-                        Debug.LogWarning("[+LUDUS] Nenhuma Legenda para o Conteúdo Auxiliar");
-                    }
-                }
-                catch (System.Exception)
-                {
-                    Debug.LogWarning("[+LUDUS] Nenhuma Legenda para o Conteúdo Auxiliar - erro ao carregar o textoAuxiliar");
-
-                }
+                this.textosAuxiliar = this.CarregarAssets("textoAuxiliar", out this.temLegendaAuxiliar);
                 #endregion
 
             }
@@ -235,17 +219,17 @@ namespace Ludus.SDK.Framework
             if (spritesObjeto.IsUnityNull())
             {
 
-                Debug.LogError("[+LUDUS] spritesObjeto não definido");
+                Debug.LogError("[+LUDUS] spritesObjeto nï¿½o definido");
                 return;
             }
             if (spritesSombra.IsUnityNull())
             {
 
-                Debug.LogError("[+LUDUS] spritesSombra não definido");
+                Debug.LogError("[+LUDUS] spritesSombra nï¿½o definido");
                 return;
             }
 
-            //atualiza o booleano de legenda, para facilitar posteriormente a verificação
+            //atualiza o booleano de legenda, para facilitar posteriormente a verificaï¿½ï¿½o
             Controle.configuracao.temLegendaAuxiliar = this.temLegendaAuxiliar;
             Controle.configuracao.temLegendaObjeto = this.temLegendaObjeto;
 
@@ -258,11 +242,11 @@ namespace Ludus.SDK.Framework
             try
             {
                 //carrega o(s) gameObjetos Image do painel OBJETO
-                //são duas imagens, caso a idéia seja trocar o elemento ao parear.
+                //sï¿½o duas imagens, caso a idï¿½ia seja trocar o elemento ao parear.
 
                 if (this.substituirObjetoAoParear)
                 {
-                    //se tem q manter a informação da imagem que vai ser colada ao parear, busca os inativos do prefab pra poder trocar depois
+                    //se tem q manter a informaï¿½ï¿½o da imagem que vai ser colada ao parear, busca os inativos do prefab pra poder trocar depois
                     List<Image> imgs = objeto.GetComponentsInChildren<Image>(true).ToList<Image>();
                     imgs = this.RetirarImagem(objeto, imgs);
                     imgsObjeto = imgs.Where(s => s.gameObject.activeInHierarchy).ToList<Image>();
@@ -275,7 +259,7 @@ namespace Ludus.SDK.Framework
                     imgsObjeto = this.RetirarImagem(objeto, imgsObjeto);
 
                 }
-                //lista de elementos de áudio do painel OBJETO
+                //lista de elementos de ï¿½udio do painel OBJETO
                 audiosSourceObjetos = objeto.GetComponentsInChildren<AudioSource>().ToList<AudioSource>();
 
 
@@ -283,7 +267,7 @@ namespace Ludus.SDK.Framework
             catch (System.Exception ex)
             {
 
-                Debug.LogError("[+LUDUS] Erro ao buscar as imagens dentro do painel objeto', verifique se as imagens estão corretamente dispostas na hierarquia de elemetos");
+                Debug.LogError("[+LUDUS] Erro ao buscar as imagens dentro do painel objeto', verifique se as imagens estï¿½o corretamente dispostas na hierarquia de elemetos");
                 Debug.LogException(ex);
                 return;
             }
@@ -297,7 +281,7 @@ namespace Ludus.SDK.Framework
         protected abstract void PopularSombras(List<int> indiceSelecionado);
         protected virtual List<int> PopularObjetos()
         {
-            //buscar os sprites e sombras, abrindo de forma embaralhada seu conteúdo na Cena
+            //buscar os sprites e sombras, abrindo de forma embaralhada seu conteï¿½do na Cena
             List<int> indiceSelecionado = new List<int>();
 
 
@@ -320,8 +304,8 @@ namespace Ludus.SDK.Framework
                     }
                     catch (System.Exception)
                     {
-                        Debug.LogError("[+LUDUS] Erro ao atribuir a legenda no índice: " + i.ToString()
-                            + " . Verifice se o arquivo de texto está corretamente formatado e com o número de palavras condizente com as imagens correspondentes(se tem 10 imagens são necessários 10 textos).");
+                        Debug.LogError("[+LUDUS] Erro ao atribuir a legenda no ï¿½ndice: " + i.ToString()
+                            + " . Verifice se o arquivo de texto estï¿½ corretamente formatado e com o nï¿½mero de palavras condizente com as imagens correspondentes(se tem 10 imagens sï¿½o necessï¿½rios 10 textos).");
                     }
                 }
                 if (substituirObjetoAoParear)
@@ -338,7 +322,7 @@ namespace Ludus.SDK.Framework
                         }
                         catch (System.Exception ex)
                         {
-                            Debug.LogError("[+LUDUS] erro ao carregar o áudio correspondente ao sprite. Verifique os arquivos na pasta(quantidade e nome, sugerece que os audios sejam dispostos com o _número correto. Por exemplo audio_0, audio_1,...)");
+                            Debug.LogError("[+LUDUS] erro ao carregar o ï¿½udio correspondente ao sprite. Verifique os arquivos na pasta(quantidade e nome, sugerece que os audios sejam dispostos com o _nï¿½mero correto. Por exemplo audio_0, audio_1,...)");
                             Debug.LogException(ex);
                         }
                     }
@@ -353,8 +337,8 @@ namespace Ludus.SDK.Framework
         }
 
 
-        //método para retirar da lista de filhos do Painel o compontente que
-        //pertence ao próprio objeto
+        //mï¿½todo para retirar da lista de filhos do Painel o compontente que
+        //pertence ao prï¿½prio objeto
         protected virtual List<Image> RetirarImagem(GameObject painel, List<Image> imgs)
         {
             if (painel.GetComponent<Image>() != null)
@@ -365,21 +349,57 @@ namespace Ludus.SDK.Framework
             return imgs;
 
         }
+        private int GerarIndice(int tamanhoArray)
+        {
+            int gerado;
+            if(this.dividirSprite)
+            {
+                if(tamanhoArray%this.itensPorParte==0)
+                {
+                     gerado = Random.Range(this.atual, 
+            (this.itensPorParte*this.atual)+this.itensPorParte);
 
+                }
+                else
+                {
+                    Debug.LogWarning("[+LUDUS] NÃ£o foi possÃ­vel dividir o sprite. NÃºmero de elementos do sprite nÃ£o pode ser dividido pelo valor sugerido na variÃ¡vel itensporpartes");
+                    gerado = Random.Range(0, tamanhoArray);
+                }
+               
+            }
+            else
+            {
+                gerado = Random.Range(0, tamanhoArray);
+            }
+            Debug.Log(gerado);
+           return gerado;
+        }
         protected virtual int IndiceNovo(List<int> indiceSelecionado)
         {
             int novoindice;
-            novoindice = Random.Range(0, spritesObjeto.Count);
 
+            int pedacos;
+            /*fatiar
+            atual
+            pedaÃ§os
+            tamanho
+
+            atual = 0
+            pedaÃ§os = 0
+            tamanho = o do array
+            */
+           
+            novoindice = this.GerarIndice(spritesObjeto.Count);
+            
             int tentativas = 1;
-            //verifica se o índice já apareceu naquele nível e se as tentativas de achar o indice novo acabaram
-            //a variavel tentativas é um controle para que o jogo não tranque caso não tenha sprites disponíveis para exibir aquela fase, 
+            //verifica se o ï¿½ndice jï¿½ apareceu naquele nï¿½vel e se as tentativas de achar o indice novo acabaram
+            //a variavel tentativas ï¿½ um controle para que o jogo nï¿½o tranque caso nï¿½o tenha sprites disponï¿½veis para exibir aquela fase, 
             //nesse caso vai aceitar imagem repetida
             while (Controle.configuracao.VerificaOcorrenciaIndiceNoNivel(novoindice))
             {
-                novoindice = Random.Range(0, spritesObjeto.Count);
+                novoindice = this.GerarIndice(spritesObjeto.Count);
                 tentativas++;
-                //se o número de itens disponíveis para a cena for igual a quantidade de objetos já exibidos Zera os exibidos
+                //se o nï¿½mero de itens disponï¿½veis para a cena for igual a quantidade de objetos jï¿½ exibidos Zera os exibidos
                 if (Controle.configuracao.objetosJaExibidos.Count == spritesObjeto.Count)
                 {
                     Controle.configuracao.ZerarExibidos();
@@ -387,6 +407,7 @@ namespace Ludus.SDK.Framework
             }
 
             indiceSelecionado.Add(novoindice);
+            this.atual++;
             return novoindice;
 
         }
@@ -435,17 +456,8 @@ namespace Ludus.SDK.Framework
 
         }
 
-        private List<Sprite> CarregarAssetsSprite(string asset)
-        {
-            List<Sprite> lista;
-            
-            lista = Resources.LoadAll<Sprite>("fases/" + pasta + "/" + asset).ToList<Sprite>();
 
-            return lista;
-
-        }
-
-        //Carrega os Assets cua lista é lida diretamente da
+        //Carrega os Assets cua lista ï¿½ lida diretamente da
         //pasta, como Sprite e AudioClip
         public List<T> CarregarAssets<T>(string asset) where T : Object
         {

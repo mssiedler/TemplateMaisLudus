@@ -78,7 +78,7 @@ namespace Ludus.SDK.Framework
             }
             catch (System.Exception ex)
             {
-                Debug.LogError("[+LUDUS] erro ao carregar o conteúdo adicional da sobra");
+                Debug.LogError("[+LUDUS] erro ao carregar o conteï¿½do adicional da sobra");
                 Debug.LogException(ex);
 
             }
@@ -97,7 +97,7 @@ namespace Ludus.SDK.Framework
         protected override void CarregarSombrasPainel()
         {
 
-            //verifica se tem conteúdo auxiliar pra sombra, se sim busca as duas imagens
+            //verifica se tem conteï¿½do auxiliar pra sombra, se sim busca as duas imagens
             if (this.conteudoauxiliar)
             {
                 List<Image> imagens = sombra.GetComponentsInChildren<Image>().ToList<Image>();
@@ -114,7 +114,7 @@ namespace Ludus.SDK.Framework
                 catch (System.Exception)
                 {
 
-                    Debug.LogWarning("[+LUDUS] áudio Source não encontrado no prefab sombra");
+                    Debug.LogWarning("[+LUDUS] ï¿½udio Source nï¿½o encontrado no prefab sombra");
                     audioSourceSombraAuxiliar = null;
                 }
                 
