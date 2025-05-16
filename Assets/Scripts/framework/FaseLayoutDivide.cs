@@ -32,9 +32,8 @@ namespace Ludus.SDK.Framework
         public bool monitorarCena;
         [Header("Divisão do Sprite")]
         public bool dividirSprite=false;
-        public bool exibirSequencial=false;
         public int itensPorParte;
-        protected int atual=0;
+      
 
         protected GameObject objeto;
         protected GameObject sombra;
@@ -58,6 +57,8 @@ namespace Ludus.SDK.Framework
         protected string[] textosAuxiliar;
 
         protected bool temLegendaObjeto, temLegendaAuxiliar;
+
+        private int controleDivisao;
         void Start()
         {
 
@@ -101,6 +102,11 @@ namespace Ludus.SDK.Framework
             {
                 this.gameObject.AddComponent<Monitor>();
             }
+            //se tiver divisão de array, inicializa a variável que controla o bloco que será sorteado
+            if (this.dividirSprite)
+            {
+                this.controleDivisao = 0;
+            }
 
             //associa os valores passados visualmente no pain�l pra classe est�tica de Controle
             try
@@ -113,7 +119,21 @@ namespace Ludus.SDK.Framework
                     Debug.LogError("[+LUDUS] Erro ao carregar a configura��o da fase. Verifique se os n�veis e a cena final foram corretamente atribu�das no inspector do painel ");
                     return;
                 }
-
+                //aqui é necessário uma verificação de divisão
+                //o número de elementos em cena não pode ser MAIOR que maior que a divisão do array
+                if (this.dividirSprite)
+                {
+                    foreach (Nivel item in this.niveis)
+                    {
+                        //se a quantidade de elementos for maior que a divisão do sprite, ajusta
+                        //ao máximo possível e coloca um aviso no console
+                        if (item.quantidadeElementos > this.itensPorParte) 
+                        {
+                            item.quantidadeElementos = this.itensPorParte;
+                            Debug.LogWarning("[+LUDUS] Quantidade de elementos em Cena não pode ser maior que a divisão do sprite. Qualtidade atualizada automaticamente para o máximo permitido");
+                        }
+                    }
+                }
                 Controle.configuracao.niveis = this.niveis;
                 Controle.configuracao.cenaFinal = this.cenaFinal;
                 Controle.configuracao.conteudoauxiliar = this.conteudoauxiliar;
@@ -356,8 +376,24 @@ namespace Ludus.SDK.Framework
             {
                 if(tamanhoArray%this.itensPorParte==0)
                 {
-                     gerado = Random.Range(this.atual, 
-            (this.itensPorParte*this.atual)+this.itensPorParte);
+                    int inicioRange;
+                    //vamos ver se é sequencial ou aleatório o sorteio do bloco que será exibido
+                    int numeroBlocos;
+                    //número de blocos é a divisao do tamanho do array por quantas partes quero dividir
+                    numeroBlocos = tamanhoArray / this.itensPorParte; 
+                    
+                    //Usa como referencia a repeticao atual, porém, se 
+                    //tiver mais fases que bloco tem que controlar isso
+                    //nessa lógica estou verificando se o início do range passou o tamanho do array,
+                    //se passou tenho q fazer ele voltar ao ciclo 
+                    this.controleDivisao = Controle.configuracao.repeticaoAtual;
+                    while (this.controleDivisao >= numeroBlocos)
+                    {
+                        this.controleDivisao -= numeroBlocos;
+                    }
+
+                    inicioRange = this.itensPorParte *this.controleDivisao;
+                    gerado = Random.Range(inicioRange, inicioRange+this.itensPorParte);
 
                 }
                 else
@@ -371,23 +407,12 @@ namespace Ludus.SDK.Framework
             {
                 gerado = Random.Range(0, tamanhoArray);
             }
-            Debug.Log(gerado);
+            
            return gerado;
         }
         protected virtual int IndiceNovo(List<int> indiceSelecionado)
         {
             int novoindice;
-
-            int pedacos;
-            /*fatiar
-            atual
-            pedaços
-            tamanho
-
-            atual = 0
-            pedaços = 0
-            tamanho = o do array
-            */
            
             novoindice = this.GerarIndice(spritesObjeto.Count);
             
@@ -405,9 +430,8 @@ namespace Ludus.SDK.Framework
                     Controle.configuracao.ZerarExibidos();
                 }
             }
-
+            
             indiceSelecionado.Add(novoindice);
-            this.atual++;
             return novoindice;
 
         }
@@ -481,7 +505,8 @@ namespace Ludus.SDK.Framework
             string[] conteudo;
             try
             {
-                TextAsset texto = Resources.Load<TextAsset>("fases/" + pasta + "/texto");
+                string caminho = $"fases/{pasta}/{asset}";
+                TextAsset texto = Resources.Load<TextAsset>(caminho);
                 if (texto != null)
                 {
                     temLegenda = true;

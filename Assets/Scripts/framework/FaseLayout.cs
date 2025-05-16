@@ -448,7 +448,8 @@ namespace Ludus.SDK.Framework
             string[] conteudo;
             try
             {
-                TextAsset texto = Resources.Load<TextAsset>("fases/" + pasta + "/texto");
+                string caminho = $"fases/{pasta}/{asset}";
+                TextAsset texto = Resources.Load<TextAsset>(caminho);
                 if (texto != null)
                 {
                     temLegenda = true;

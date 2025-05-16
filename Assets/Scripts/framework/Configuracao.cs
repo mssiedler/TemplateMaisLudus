@@ -31,7 +31,7 @@ namespace Ludus.SDK.Framework
 
         //controle da fase atualmente apresentada
         protected int nivelAtual;
-        protected int repeticaoAtual;
+        public int repeticaoAtual;
 
         protected bool inicial = true;
 
