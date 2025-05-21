@@ -12,6 +12,14 @@ namespace Ludus.SDK.Framework
 { 
     public abstract class Configuracao
     {
+        public enum FormasdeInteracao
+        {
+            DragAndDrop,
+            CliqueSimples
+        }
+
+
+
         public List<Nivel> niveis;
         public String cenaFinal;
         public int objetoLargura, objetoAltura, sombraLargura, sombraAltura;
@@ -19,6 +27,12 @@ namespace Ludus.SDK.Framework
         public string sombraauxiliar;
         public int sombraAuxiliarLargura = 100, sombraAuxiliarAltura = 100;
         public bool substituirObjetoAoParear;
+
+
+        public FormasdeInteracao formaDeInteracao = FormasdeInteracao.DragAndDrop;
+        //essa variável só tem sentido ser setada no script clique.. 
+        //é para o caso onde clicamos e não queremos q a sombra troque a imagem pela do objeto
+        public bool trocarImagemSombraAoClicar=false;
 
         public Button botaoTroca;
         protected AudioClip somOk;
@@ -186,6 +200,11 @@ namespace Ludus.SDK.Framework
             botaoTroca.gameObject.SetActive(true);
 
         }
+        public virtual void AtualizarErro()
+        {
+            //aqui vai a atualização da pontuação, por enquanto n faz nada
+
+        }
 
         public virtual void ZerarExibidos()
         {
@@ -226,7 +245,15 @@ namespace Ludus.SDK.Framework
             preFabObjeto = GameObject.Instantiate(meuPF) as GameObject;
             RectTransform rt = preFabObjeto.GetComponent<RectTransform>();
             rt.sizeDelta = new Vector2(objetoLargura, objetoAltura);
+            //o padrão de interação é Drag and Drop, se habilitar clique ele vai trocar
+            //na prática ele habilita o script de clique e desabilita o outro
+            if (this.formaDeInteracao.Equals(FormasdeInteracao.CliqueSimples))
+            {
+                //Se habilitar clique, troca o script padrão habilitado(DragAndDrop) pelo de clique
+                preFabObjeto.GetComponent<DragAndDrop>().enabled = false;
+                preFabObjeto.GetComponent<Clique>().enabled = true;
 
+            }
 
             rt = new RectTransform();
 

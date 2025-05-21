@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static Ludus.SDK.Framework.Configuracao;
 
 
 namespace Ludus.SDK.Framework
@@ -13,6 +14,7 @@ namespace Ludus.SDK.Framework
      {
 
         [Header("Configurações da Fase")]
+        public FormasdeInteracao formaDeInteracao = FormasdeInteracao.DragAndDrop;
         public Button botaoTrocaCena;
         public string pasta;
         public string cenaFinal;
@@ -27,6 +29,8 @@ namespace Ludus.SDK.Framework
         public bool usarDimensoesImagens = false;
         public int objetoLargura = 100, objetoAltura = 100, sombraLargura = 100, sombraAltura = 100;
         public int sombraAuxiliarLargura = 100, sombraAuxiliarAltura = 100;
+        [Header("Apenas para Interação por Clique")]
+        public bool trocarImagemSombraAoClicar = false;
         [Header("Monitoramento")]
         public bool monitorarCena;
 
@@ -56,7 +60,7 @@ namespace Ludus.SDK.Framework
         void Start()
         {
 
-
+            
 
         }
         protected virtual void CarregarConfiguracao()
@@ -97,7 +101,7 @@ namespace Ludus.SDK.Framework
                 this.gameObject.AddComponent<Monitor>();
             }
 
-            //associa os valores passados visualmente no pain�l pra classe est�tica de Controle
+            //associa os valores passados visualmente no painél pra classe estática de Controle
             try
             {
 
@@ -108,7 +112,7 @@ namespace Ludus.SDK.Framework
                     Debug.LogError("[+LUDUS] Erro ao carregar a configura��o da fase. Verifique se os n�veis e a cena final foram corretamente atribu�das no inspector do painel ");
                     return;
                 }
-
+                Controle.configuracao.formaDeInteracao = this.formaDeInteracao;
                 Controle.configuracao.niveis = this.niveis;
                 Controle.configuracao.cenaFinal = this.cenaFinal;
                 Controle.configuracao.conteudoauxiliar = this.conteudoauxiliar;
@@ -124,7 +128,8 @@ namespace Ludus.SDK.Framework
                 Controle.configuracao.sombraAuxiliarLargura = this.sombraAuxiliarLargura;
                 Controle.configuracao.txtLegenda = this.txtLegenda;
 
-
+                //Clique
+                Controle.configuracao.trocarImagemSombraAoClicar = this.trocarImagemSombraAoClicar;
 
                 //carrega as configura��es da fase
                 Controle.configuracao.CarregarConfiguracao(painel);

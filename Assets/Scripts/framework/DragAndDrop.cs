@@ -85,6 +85,7 @@ namespace Ludus.SDK.Framework
                     if (alvo.name.Contains("sombra"))
                     {
                         //AQUI SIM configura um erro, então toca o som (se tiver na pasta)
+                        Controle.configuracao.AtualizarErro();
                         Controle.configuracao.TocarSom('E');   
                     }
                     

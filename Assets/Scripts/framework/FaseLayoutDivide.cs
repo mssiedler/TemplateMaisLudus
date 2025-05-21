@@ -5,6 +5,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using static Ludus.SDK.Framework.Configuracao;
 
 
 namespace Ludus.SDK.Framework
@@ -14,6 +15,7 @@ namespace Ludus.SDK.Framework
      {
 
         [Header("Configurações da Fase")]
+        public FormasdeInteracao formaDeInteracao = FormasdeInteracao.DragAndDrop;
         public Button botaoTrocaCena;
         public string pasta;
         public string cenaFinal;
@@ -28,6 +30,8 @@ namespace Ludus.SDK.Framework
         public bool usarDimensoesImagens = false;
         public int objetoLargura = 100, objetoAltura = 100, sombraLargura = 100, sombraAltura = 100;
         public int sombraAuxiliarLargura = 100, sombraAuxiliarAltura = 100;
+        [Header("Apenas para Interação por Clique")]
+        public bool trocarImagemSombraAoClicar = false;
         [Header("Monitoramento")]
         public bool monitorarCena;
         [Header("Divisão do Sprite")]
@@ -134,6 +138,7 @@ namespace Ludus.SDK.Framework
                         }
                     }
                 }
+                Controle.configuracao.formaDeInteracao = this.formaDeInteracao;
                 Controle.configuracao.niveis = this.niveis;
                 Controle.configuracao.cenaFinal = this.cenaFinal;
                 Controle.configuracao.conteudoauxiliar = this.conteudoauxiliar;
@@ -148,7 +153,8 @@ namespace Ludus.SDK.Framework
                 Controle.configuracao.sombraAuxiliarAltura = this.sombraAuxiliarAltura;
                 Controle.configuracao.sombraAuxiliarLargura = this.sombraAuxiliarLargura;
                 Controle.configuracao.txtLegenda = this.txtLegenda;
-
+                //Clique
+                Controle.configuracao.trocarImagemSombraAoClicar = this.trocarImagemSombraAoClicar;
 
 
                 //carrega as configura��es da fase
