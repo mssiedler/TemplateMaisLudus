@@ -290,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4622023303827317060, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 665
+      value: 803
       objectReference: {fileID: 0}
     - target: {fileID: 4622023303827317060, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -326,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293190107560899905, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -308
+      value: -230
       objectReference: {fileID: 0}
     - target: {fileID: 8460970127949004430, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -431,6 +431,10 @@ PrefabInstance:
     - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: exibirSequencial
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: fasesDisponiveis
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: formaDeInteracao

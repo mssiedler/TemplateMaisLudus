@@ -1,11 +1,12 @@
 ﻿
-  using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using static Ludus.SDK.Framework.Configuracao;
+
 
 
 namespace Ludus.SDK.Framework
@@ -17,7 +18,8 @@ namespace Ludus.SDK.Framework
         [Header("Configurações da Fase")]
         public FormasdeInteracao formaDeInteracao = FormasdeInteracao.DragAndDrop;
         public Button botaoTrocaCena;
-        public string pasta;
+        public RelacaoFases fasesDisponiveis;
+        private string pasta;
         public string cenaFinal;
         public List<Nivel> niveis;
         [Header("Configurações - Auxiliar")]
@@ -174,19 +176,20 @@ namespace Ludus.SDK.Framework
         protected virtual void CarregaAssetsPastas()
         {
             //verifica se a vari�vel pasta foi definida
-            if (string.IsNullOrEmpty(pasta))
+            if (fasesDisponiveis==null)
             {
 
                 Debug.LogError("[+LUDUS] Vari�vel pasta n�o defindida, verifique as vari�veis do script e adicione a pasta corresponde aos sprites. Dica: procure na pasta Resources/fases e busque O NOME DA FASE DESEJADA");
                 return;
             }
+            pasta = fasesDisponiveis.ToString();
 
             try
             {
 
                 spritesObjeto = this.CarregarAssets<Sprite>("objeto");
                 spritesSombra = this.CarregarAssets<Sprite>("sombra");
-                
+
 
             }
             catch (System.Exception ex)

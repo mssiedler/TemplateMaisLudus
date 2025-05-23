@@ -404,7 +404,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
       propertyPath: pasta
-      value: formas
+      value: diferenteParaClique
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: dividirSprite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: itensPorParte
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: fasesDisponiveis
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: formaDeInteracao
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: trocarImagemSombraAoClicar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
       propertyPath: niveis.Array.data[0].quantidadeElementos

@@ -384,6 +384,10 @@ PrefabInstance:
       value: formas
       objectReference: {fileID: 0}
     - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: fasesDisponiveis
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: niveis.Array.size
       value: 3
       objectReference: {fileID: 0}
