@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: f3fd8e89dac40b64f916306732477ca2
+guid: e15b99ab40d2e4b4fa5ce58d6897f13e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -67,7 +67,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,7 +93,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,8 +106,21 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,90 +136,95 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sombra_0
+      name: objeto_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 621
-        width: 592
-        height: 614
+        x: 2
+        y: 699
+        width: 623
+        height: 667
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f878790324aa71f42b16f4108bdbe18d
-      internalID: -140680565
+      spriteID: 062881bcb30355a4ba4ad3dbe6638a8f
+      internalID: -527097910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra_1
+      name: objeto_1
       rect:
         serializedVersion: 2
-        x: 603
-        y: 629
-        width: 597
-        height: 606
+        x: 626
+        y: 693
+        width: 624
+        height: 674
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b38e2b629e0d91489f220243d45b2a9
-      internalID: -2020967254
+      spriteID: 5a64399fbdda295408aeda33938f3487
+      internalID: 494657523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra_2
+      name: objeto_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 9
-        width: 558
-        height: 610
+        x: 2
+        y: 2
+        width: 596
+        height: 680
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e450e66bed8ea1f468d1f2975227f5e3
-      internalID: -192473069
+      spriteID: c02e9c2b6270e3f4297d3bb60f47f28e
+      internalID: 2039089040
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra_3
+      name: objeto_3
       rect:
         serializedVersion: 2
-        x: 603
+        x: 628
         y: 0
-        width: 597
-        height: 613
+        width: 622
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3069f5a7fa2e3e4da1e69499b5b13ce
-      internalID: 340421574
+      spriteID: 3a6c7b3f367f9fe44bfd3fdc347b93d6
+      internalID: 596767779
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -216,11 +234,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
-      sombra_0: -140680565
-      sombra_1: -2020967254
-      sombra_2: -192473069
-      sombra_3: 340421574
+      objeto_0: -527097910
+      objeto_1: 494657523
+      objeto_2: 2039089040
+      objeto_3: 596767779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -26,14 +26,28 @@ namespace Ludus.SDK.Framework
 
                 btn.onClick.AddListener(EventoCliqueAuxiliar);
             }
+            AjustarCollider();
 
         }
 
+         void AjustarCollider()
+    {
+        BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
+        if (boxCollider == null)
+        {
+            boxCollider = gameObject.AddComponent<BoxCollider2D>();
+        }
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        Vector2 tamanho = rectTransform.rect.size;
+        // Define o tamanho do collider com base nas variáveis largura/altura
+        boxCollider.size = tamanho = rectTransform.rect.size;
+        boxCollider.offset = rectTransform.rect.center;
+    }
 
         public void EventoCliqueAuxiliar()
         {
             audioSource.Play();
-            if (Controle.configuracao.temLegendaAuxiliar) 
+            if (Controle.configuracao.temLegendaAuxiliar)
             {
                 try
                 {

@@ -300,7 +300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973555610587315694, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 19.909973
+      value: 19.910034
       objectReference: {fileID: 0}
     - target: {fileID: 4973555610587315694, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -313,6 +313,10 @@ PrefabInstance:
     - target: {fileID: 7609177052230196633, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
       propertyPath: pasta
       value: formas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609177052230196633, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
+      propertyPath: formaDeInteracao
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7609177052230196633, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
       propertyPath: usarDimensoesImagens

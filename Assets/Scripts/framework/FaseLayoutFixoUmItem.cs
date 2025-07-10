@@ -9,7 +9,7 @@ namespace Ludus.SDK.Framework
 {
     public class FaseLayoutFixoUmItem : FaseLayoutDivide
     {
-
+     
         private AudioSource audioSourceSombraAuxiliar;
         private Image imgSombra;
         private Image imgAuxiliar;

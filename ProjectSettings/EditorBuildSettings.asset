@@ -30,14 +30,14 @@ EditorBuildSettings:
     path: Assets/Template/Scenes/Telas Codificadas/VNCode.unity
     guid: eb8f156e0b8f46d4285952b6d97def35
   - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/CenaFinalTeste.unity
-    guid: 77f26e032b8866a499d7b5cee5765658
+    path: Assets/Template/Scenes/Telas Codificadas/Inicial.unity
+    guid: 7e95e8670a553ac469f11ae849234b56
   - enabled: 1
     path: Assets/Template/Scenes/Telas Codificadas/Horizontal1.unity
     guid: cb106c8009b85454e8b61d99e31bc36f
   - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/Inicial.unity
-    guid: 7e95e8670a553ac469f11ae849234b56
+    path: Assets/Template/Scenes/Telas Codificadas/CenaFinalTeste.unity
+    guid: 77f26e032b8866a499d7b5cee5765658
   - enabled: 1
     path: Assets/Template/Scenes/Telas Codificadas/Escolher.unity
     guid: 67ccdc35e80bb684694e1e8b4e2dce26
@@ -56,5 +56,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Template/Scenes/Telas Codificadas/Horizontal1ComAuxiliar.unity
     guid: 9b194bae0a67823449f20851cacdd9f3
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Teste.unity
+    guid: bbe23e3c79f4c88468df7fef9118f4a2
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Teste 1.unity
+    guid: b8e837e52f002d0429258eb682a07258
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

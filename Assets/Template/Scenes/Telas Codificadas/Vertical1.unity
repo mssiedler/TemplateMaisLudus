@@ -372,7 +372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4973555610587315694, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -374.03
+      value: -374.03003
       objectReference: {fileID: 0}
     - target: {fileID: 5115479105986837949, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
       propertyPath: m_Spacing
@@ -405,6 +405,18 @@ PrefabInstance:
     - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
       propertyPath: pasta
       value: formas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: fasesDisponiveis
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: formaDeInteracao
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: substituirObjetoAoParear
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
       propertyPath: niveis.Array.data[0].quantidadeElementos

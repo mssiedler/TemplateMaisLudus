@@ -8,24 +8,24 @@ using UnityEngine.UI;
 
 
 // Script feito por Ely Torres Neto para projeto +LUDUS.
-// Caso você queira ver o meu github, fique à vontade: https://github.com/netoe1
+// Caso vocï¿½ queira ver o meu github, fique ï¿½ vontade: https://github.com/netoe1
 
-// Sobre as variáveis constantes com o prefixo PREFIX:
-//      Elas serão usadas como textos padronizados para os logs, isso facilita na hora de tratar erros e dar display nas
-//      mensagens, pois é um label padrão, então, se mudarmos uma vez, atualiza no código inteiro.
+// Sobre as variï¿½veis constantes com o prefixo PREFIX:
+//      Elas serï¿½o usadas como textos padronizados para os logs, isso facilita na hora de tratar erros e dar display nas
+//      mensagens, pois ï¿½ um label padrï¿½o, entï¿½o, se mudarmos uma vez, atualiza no cï¿½digo inteiro.
 // Depreciado
 namespace Ludus.SDK.Framework
 {
-    interface IMonitorMouseData     // Essa interface é responsável por obter os dados do mouse.
+    interface IMonitorMouseData     // Essa interface ï¿½ responsï¿½vel por obter os dados do mouse.
     {
-        Vector3 GetMousePosition(); //  Método Get() que retorna a posição do mouse em coordenadas.
-        /* void IsPointerNotMoving();*/  //  Verifica se o ponteiro está se mexendo. Função Depreciada.
+        Vector3 GetMousePosition(); //  Mï¿½todo Get() que retorna a posiï¿½ï¿½o do mouse em coordenadas.
+        /* void IsPointerNotMoving();*/  //  Verifica se o ponteiro estï¿½ se mexendo. Funï¿½ï¿½o Depreciada.
     }
-    //interface IMonitorTime          //  Essa interface é responsável por gerenciar os contadores de tempo que serão utilizados.
+    //interface IMonitorTime          //  Essa interface ï¿½ responsï¿½vel por gerenciar os contadores de tempo que serï¿½o utilizados.
     //{
-    //    // OBSERVAÇÃO IMPORTANTE: Essas primeiras funções, modificam apenas o TimeSpan e StopWatch do próprio Monitor, o qual já é instanciado por padrão.
+    //    // OBSERVAï¿½ï¿½O IMPORTANTE: Essas primeiras funï¿½ï¿½es, modificam apenas o TimeSpan e StopWatch do prï¿½prio Monitor, o qual jï¿½ ï¿½ instanciado por padrï¿½o.
     //    void StartMonitoringTime(); //  Inicia o contador de tempo.
-    //    TimeSpan GetCurrentTime();  // Obtém data e hora padrão. Similar ao Date.Now() do Javascript.
+    //    TimeSpan GetCurrentTime();  // Obtï¿½m data e hora padrï¿½o. Similar ao Date.Now() do Javascript.
     //    void EndMonitoringTime();   // Termina o tempo de monitoramento.
     //}
     //Interface depreciada.
@@ -36,7 +36,7 @@ namespace Ludus.SDK.Framework
         IPointerMoveHandler,
         IMonitorMouseData
     {
-        //// Prefixos que serão utilizados de string para os logs.
+        //// Prefixos que serï¿½o utilizados de string para os logs.
         //const string PREFIX_LUDUS_WARN = "[+LUDUS-WARNING]:";
         //const string PREFIX_LUDUS_SUCCESS = "[+LUDUS-SUCCESS]:";
         //const string PREFIX_LUDUS_ERROR = "[+LUDUS-ERROR]:";
@@ -54,11 +54,11 @@ namespace Ludus.SDK.Framework
             JsonLog.log.app = Application.productName;
             JsonLog.log.version = Application.version;
             JsonLog.log.scene = scene.name;
-            JsonLog.log.build = EditorUserBuildSettings.activeBuildTarget.ToString();
+            //JsonLog.log.build = EditorUserBuildSettings.activeBuildTarget.ToString();
             JsonLog.log.datehourstart = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
 
             JsonLog.log.addCol(new LudusLogCol("[+LUDUS-monitor-start]", "O script iniciou em'" + this.gameObject.name + "', id: " + this.gameObject.GetInstanceID()));
-            //  UnityEngine.Debug.Log("[+LUDUS-monitor-start]: O script iniciou em '" + this.gameObject.name + "',id:" + this.gameObject.GetInstanceID()); // Log mostra para o usuário que o script está em ação!
+            //  UnityEngine.Debug.Log("[+LUDUS-monitor-start]: O script iniciou em '" + this.gameObject.name + "',id:" + this.gameObject.GetInstanceID()); // Log mostra para o usuï¿½rio que o script estï¿½ em aï¿½ï¿½o!
             //Canvas objeto = FindObjectOfType<Canvas>();
 
             Transform parentTransform = this.transform;
@@ -78,8 +78,8 @@ namespace Ludus.SDK.Framework
             {
 
                 child.gameObject.AddComponent<MonitorClique>();
-                // Se o compontente não é botão adiciona o monitoramento dos filhos
-                // isso ocorre pra evitar conflito do OnClick do botão com o monitoramento do texto ilustrativo que vem .. ou de uma imagem
+                // Se o compontente nï¿½o ï¿½ botï¿½o adiciona o monitoramento dos filhos
+                // isso ocorre pra evitar conflito do OnClick do botï¿½o com o monitoramento do texto ilustrativo que vem .. ou de uma imagem
                 if (child.gameObject.GetComponent<Button>() == null)
                 {
                     AddMonitoramento(child.transform);
@@ -88,7 +88,7 @@ namespace Ludus.SDK.Framework
 
         }
 
-        public Vector3 GetMousePosition() // Retorna a posição do Vector3, através do Input.mousePosition.
+        public Vector3 GetMousePosition() // Retorna a posiï¿½ï¿½o do Vector3, atravï¿½s do Input.mousePosition.
         {
             return Input.mousePosition;
         }
@@ -99,7 +99,7 @@ namespace Ludus.SDK.Framework
 
             if (eventData.button == PointerEventData.InputButton.Left)
             {
-                side = "esquerdo";          // Dá o set identificando qual lado do mouse foi clicado.
+                side = "esquerdo";          // Dï¿½ o set identificando qual lado do mouse foi clicado.
             }
 
             else if (eventData.button == PointerEventData.InputButton.Middle)
@@ -113,8 +113,8 @@ namespace Ludus.SDK.Framework
                 side = "direito";
             }
 
-            JsonLog.log.addCol(new LudusLogCol("[+LUDUS-mouse-click]:", "Botão " + side + " ." + eventData.pointerClick.gameObject.name));
-            //  UnityEngine.Debug.Log("[+LUDUS-mouse-click]: O botão " + side + "."); // Mostra o log ao usuário.
+            JsonLog.log.addCol(new LudusLogCol("[+LUDUS-mouse-click]:", "Botï¿½o " + side + " ." + eventData.pointerClick.gameObject.name));
+            //  UnityEngine.Debug.Log("[+LUDUS-mouse-click]: O botï¿½o " + side + "."); // Mostra o log ao usuï¿½rio.
         }
         public void OnPointerMove(PointerEventData eventData)
         {

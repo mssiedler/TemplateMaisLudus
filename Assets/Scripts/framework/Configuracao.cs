@@ -15,7 +15,8 @@ namespace Ludus.SDK.Framework
         public enum FormasdeInteracao
         {
             DragAndDrop,
-            CliqueSimples
+            CliqueSimples, 
+            CliquePegaESolta
         }
 
 
@@ -250,9 +251,19 @@ namespace Ludus.SDK.Framework
             if (this.formaDeInteracao.Equals(FormasdeInteracao.CliqueSimples))
             {
                 //Se habilitar clique, troca o script padrão habilitado(DragAndDrop) pelo de clique
-                preFabObjeto.GetComponent<DragAndDrop>().enabled = false;
-                preFabObjeto.GetComponent<Clique>().enabled = true;
+                preFabObjeto.AddComponent<Clique>();
 
+
+            }
+            else if (this.formaDeInteracao.Equals(FormasdeInteracao.CliquePegaESolta))
+            {
+                //Se habilitar clique, troca o script padrão habilitado(DragAndDrop) pelo de clique
+
+                preFabObjeto.AddComponent<PegaeSolta>();
+            }
+            else
+            { 
+                preFabObjeto.AddComponent<DragAndDrop>();
             }
 
             rt = new RectTransform();
