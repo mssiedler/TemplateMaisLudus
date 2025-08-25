@@ -18,14 +18,15 @@ namespace Ludus.SDK.Framework
         [Header("Configurações da Fase")]
         public FormasdeInteracao formaDeInteracao = FormasdeInteracao.DragAndDrop;
         public Button botaoTrocaCena;
-        public RelacaoFases fasesDisponiveis;
-        private string pasta;
+        //ou é a relação de fases ou é a pasta que vale
+        public RelacaoFases fasesDisponiveis; 
+        public string pasta;
         public string cenaFinal;
         public List<Nivel> niveis;
         [Header("Configurações - Auxiliar")]
         public bool conteudoauxiliar;
         public bool substituirObjetoAoParear;
-        public string sombraauxiliar = "sombraComAuxiliar";
+        public Auxiliares sombraauxiliar = Auxiliares.Direita;
 
         [Header("Dimensões das Imagens")]
         [Tooltip("Usar largura e altura padrão")]
@@ -33,7 +34,7 @@ namespace Ludus.SDK.Framework
         public int objetoLargura = 100, objetoAltura = 100, sombraLargura = 100, sombraAltura = 100;
         public int sombraAuxiliarLargura = 100, sombraAuxiliarAltura = 100;
         [Header("Apenas para Interação por Clique")]
-        public bool trocarImagemSombraAoClicar = false;
+        public bool trocarImagemSombraAoClicar = true;
         [Header("Monitoramento")]
         public bool monitorarCena;
         [Header("Divisão do Sprite")]
@@ -65,10 +66,32 @@ namespace Ludus.SDK.Framework
         protected bool temLegendaObjeto, temLegendaAuxiliar;
 
         private int controleDivisao;
-        void Start()
+      
+
+
+        public void Start()
         {
+            //Se for setado o cursor, busca ele seguindo o nome padrão do cursor
+            try
+            {
+                Texture2D cursorTexture = Resources.Load<Texture2D>("cursor/padrao");
 
-
+                if (cursorTexture != null)
+                {
+                    Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+                    Controle.configuracao.usacursor = true;
+                }
+                else
+                {
+                    Debug.LogWarning("[+LUDUS] Cursor não encontrado em 'Resources/cursor/padrao' .\nCertifique-se de que existe um arquivo chamado padrao na pasta cursor(esse é o nome do arquivo do cursor que irá substituir o cursor padrão).");
+                    Controle.configuracao.usacursor = false;
+                }
+            }
+            catch
+            {
+                Debug.LogWarning("[+LUDUS] Cursor não encontrado em 'Resources/cursor/padrao' .\nCertifique-se de que existe um arquivo chamado padrao na pasta cursor(esse é o nome do arquivo do cursor que irá substituir o cursor padrão).");
+                Controle.configuracao.usacursor = false;
+            }
 
         }
         protected virtual void CarregarConfiguracao()
@@ -175,13 +198,7 @@ namespace Ludus.SDK.Framework
 
         protected virtual void CarregaAssetsPastas()
         {
-            //verifica se a vari�vel pasta foi definida
-            if (fasesDisponiveis==null)
-            {
-
-                Debug.LogError("[+LUDUS] Vari�vel pasta n�o defindida, verifique as vari�veis do script e adicione a pasta corresponde aos sprites. Dica: procure na pasta Resources/fases e busque O NOME DA FASE DESEJADA");
-                return;
-            }
+            
             pasta = fasesDisponiveis.ToString();
 
             try
@@ -328,7 +345,7 @@ namespace Ludus.SDK.Framework
                 {
                     try
                     {
-                        imgsObjeto[i].GetComponent<DragAndDrop>().legenda = this.textos[selecionado];
+                        imgsObjeto[i].GetComponent<BaseInteracao>().legenda = this.textos[selecionado];
 
                     }
                     catch (System.Exception)

@@ -25,7 +25,7 @@ namespace Ludus.SDK.Framework
         public String cenaFinal;
         public int objetoLargura, objetoAltura, sombraLargura, sombraAltura;
         public bool conteudoauxiliar; //se a sombra que será exibida tem cotnteúdo auxiliar, influencia no prefab que será carregado da sombra
-        public string sombraauxiliar;
+        public Auxiliares sombraauxiliar;
         public int sombraAuxiliarLargura = 100, sombraAuxiliarAltura = 100;
         public bool substituirObjetoAoParear;
 
@@ -33,7 +33,7 @@ namespace Ludus.SDK.Framework
         public FormasdeInteracao formaDeInteracao = FormasdeInteracao.DragAndDrop;
         //essa variável só tem sentido ser setada no script clique.. 
         //é para o caso onde clicamos e não queremos q a sombra troque a imagem pela do objeto
-        public bool trocarImagemSombraAoClicar=false;
+        public bool trocarImagemSombraAoClicar=true;
 
         public Button botaoTroca;
         protected AudioClip somOk;
@@ -55,6 +55,10 @@ namespace Ludus.SDK.Framework
 
         public TextMeshProUGUI txtLegenda;
         public bool temLegendaObjeto, temLegendaAuxiliar;
+
+        //variável para verificar se tem cursor para ser utilizado
+        //é atribuida no FaseLayout quando é feita a verificação do arquivo na pasta
+        public bool usacursor;
         public virtual void CarregarConfiguracao(GameObject novoPainelGeral)
         {
             if (inicial)
@@ -248,29 +252,27 @@ namespace Ludus.SDK.Framework
             rt.sizeDelta = new Vector2(objetoLargura, objetoAltura);
             //o padrão de interação é Drag and Drop, se habilitar clique ele vai trocar
             //na prática ele habilita o script de clique e desabilita o outro
-            if (this.formaDeInteracao.Equals(FormasdeInteracao.CliqueSimples))
+
+            switch (this.formaDeInteracao)
             {
-                //Se habilitar clique, troca o script padrão habilitado(DragAndDrop) pelo de clique
-                preFabObjeto.AddComponent<Clique>();
+                case FormasdeInteracao.CliqueSimples:
+                    preFabObjeto.AddComponent<Clique>();
+                    break;
 
+                case FormasdeInteracao.CliquePegaESolta:
+                    preFabObjeto.AddComponent<PegaeSolta>();
+                    break;
 
-            }
-            else if (this.formaDeInteracao.Equals(FormasdeInteracao.CliquePegaESolta))
-            {
-                //Se habilitar clique, troca o script padrão habilitado(DragAndDrop) pelo de clique
-
-                preFabObjeto.AddComponent<PegaeSolta>();
-            }
-            else
-            { 
-                preFabObjeto.AddComponent<DragAndDrop>();
+                default:
+                    preFabObjeto.AddComponent<DragAndDrop>();
+                    break;
             }
 
             rt = new RectTransform();
 
             if (this.conteudoauxiliar)
             {
-                meuPF = Resources.Load<GameObject>("preFabs/" + this.sombraauxiliar);
+                meuPF = Resources.Load<GameObject>("preFabs/auxiliares/" + this.sombraauxiliar.ToString());
                 preFabSombra = GameObject.Instantiate(meuPF) as GameObject;
                 rt = preFabSombra.GetComponent<RectTransform>();
                 rt.sizeDelta = new Vector2(sombraLargura, sombraAltura);

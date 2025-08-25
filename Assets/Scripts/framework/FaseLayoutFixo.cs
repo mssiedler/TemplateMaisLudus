@@ -15,6 +15,7 @@ namespace Ludus.SDK.Framework
 
         void Start()
         {
+           
             //Carrega o tipo de tela que será associado a configuração da fase
             if (Controle.configuracao == null)
             {
@@ -36,7 +37,9 @@ namespace Ludus.SDK.Framework
 
             List<int> indiceSelecionado =  this.PopularObjetos();
             this.PopularSombras(indiceSelecionado);
-       
+
+            base.Start();
+
         }
         protected override void PopularSombras(List<int> indiceSelecionado)
         {

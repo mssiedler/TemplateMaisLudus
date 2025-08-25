@@ -283,6 +283,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 324
       objectReference: {fileID: 0}
+    - target: {fileID: 7151305918300292989, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: customCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: f5d70efe6ddb11c44b97237c7d4d7490, type: 3}
     - target: {fileID: 8293190107560899905, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_SizeDelta.x
       value: -277.58
@@ -293,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8293190107560899905, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 43.79001
+      value: 43.79004
       objectReference: {fileID: 0}
     - target: {fileID: 8293190107560899905, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -388,12 +392,28 @@ PrefabInstance:
       value: formas
       objectReference: {fileID: 0}
     - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: sombraauxiliar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: conteudoauxiliar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: fasesDisponiveis
-      value: 7
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: formaDeInteracao
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: niveis.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: trocarImagemSombraAoClicar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8884643633075197553, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: niveis.Array.data[0].repeticoes

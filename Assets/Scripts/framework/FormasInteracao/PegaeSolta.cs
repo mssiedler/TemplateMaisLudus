@@ -6,15 +6,13 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class PegaeSolta : MonoBehaviour, IPointerClickHandler
+public class PegaeSolta : BaseInteracao, IPointerClickHandler
 {
     private RectTransform rectTransform;
-    private Canvas canvas;
+   
     private bool isFollowing = false;
     private Vector3 originalPosition;
-    
-    public static bool colouCerto;
-
+   
     void Awake()
     {
        
@@ -52,10 +50,29 @@ public class PegaeSolta : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         isFollowing = !isFollowing;
-       
-        if (isFollowing == false )
+
+        if (isFollowing == false)
         {
             TryDrop();
+
+        }
+        
+        if (Controle.configuracao.usacursor)
+        {
+            Texture2D cursorTexture;
+            if (isFollowing)
+            {
+                cursorTexture = Resources.Load<Texture2D>("cursor/pegando");
+            }
+            else
+            {
+                cursorTexture = Resources.Load<Texture2D>("cursor/padrao");
+            }
+
+            if (cursorTexture != null)
+            {
+                Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+            }
         }
     }
 
@@ -91,7 +108,7 @@ public class PegaeSolta : MonoBehaviour, IPointerClickHandler
 
                         if (numeroSpriteObj.Equals(numeroSpriteSombra))
                         {
-                            Debug.Log("igual");
+                            
                             if (Controle.configuracao.substituirObjetoAoParear)
                             {
                                 try

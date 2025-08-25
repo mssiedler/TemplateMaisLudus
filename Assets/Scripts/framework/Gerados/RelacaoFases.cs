@@ -1,6 +1,6 @@
 public enum RelacaoFases
 {
-    amanda,
+    amanda2,
     brinquedos,
     cores,
     diferente,

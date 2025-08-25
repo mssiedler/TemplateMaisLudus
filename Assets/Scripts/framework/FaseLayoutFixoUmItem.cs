@@ -17,8 +17,11 @@ namespace Ludus.SDK.Framework
         //legenda
         private EventoSombra eventoSombra;
 
+
+
         void Start()
         {
+            
             if (Controle.configuracao == null)
             {
                 Controle.configuracao = new ConfiguracaoFaseUmItem();
@@ -43,7 +46,10 @@ namespace Ludus.SDK.Framework
             this.PopularSombras(indiceSelecionado);
             #endregion
 
+            base.Start();
+
         }
+
         protected override void PopularSombras(List<int> indiceSelecionado)
         {
 

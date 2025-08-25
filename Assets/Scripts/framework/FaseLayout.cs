@@ -22,7 +22,7 @@ namespace Ludus.SDK.Framework
         [Header("Configurações - Auxiliar")]
         public bool conteudoauxiliar;
         public bool substituirObjetoAoParear;
-        public string sombraauxiliar = "sombraComAuxiliar";
+        public Auxiliares sombraauxiliar = Auxiliares.Direita;
 
         [Header("Dimensões das Imagens")]
         [Tooltip("Usar largura e altura padrão")]
@@ -57,12 +57,9 @@ namespace Ludus.SDK.Framework
         protected string[] textosAuxiliar;
 
         protected bool temLegendaObjeto, temLegendaAuxiliar;
-        void Start()
-        {
 
-            
 
-        }
+        
         protected virtual void CarregarConfiguracao()
         {
             #region CarregarConfiguracao
@@ -297,10 +294,8 @@ namespace Ludus.SDK.Framework
                 //se tem legenda, habilita
                 if (this.temLegendaObjeto)
                 {
-                    try
-                    {
-                        imgsObjeto[i].GetComponent<DragAndDrop>().legenda = this.textos[selecionado];
-
+                    try { 
+                       imgsObjeto[i].GetComponent<BaseInteracao>().legenda = this.textos[selecionado];
                     }
                     catch (System.Exception)
                     {

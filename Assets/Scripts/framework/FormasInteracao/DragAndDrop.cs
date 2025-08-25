@@ -3,33 +3,21 @@ using UnityEngine.EventSystems;
 
 namespace Ludus.SDK.Framework
 {
-    public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+    public class DragAndDrop : BaseInteracao, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
-
-        private RectTransform rt;
-        private CanvasGroup grupo;
         private Vector2 posicaoOriginal;
         private new AudioSource audio;
-        private Canvas canvas;
-
-        public static bool colouCerto;
-
-
-        //legenda
-        public string legenda;
-
-        public void Awake()
+       
+        private void Awake()
         {
+            canvas = Controle.configuracao.painelGeral.GetComponent<Canvas>();
             rt = GetComponent<RectTransform>();
             grupo = GetComponent<CanvasGroup>();
             audio = this.GetComponentInChildren<AudioSource>();
 
-
-            canvas = Controle.configuracao.painelGeral.GetComponent<Canvas>();
-           
-             
             colouCerto = false;
         }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
 
@@ -58,6 +46,17 @@ namespace Ludus.SDK.Framework
                 }
                 
 
+            }
+            //testa o cursor
+            if (Controle.configuracao.usacursor)
+            {
+
+                Texture2D cursorTexture = Resources.Load<Texture2D>("cursor/pegando");
+
+                if (cursorTexture != null)
+                {
+                    Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+                }
             }
         }
 
@@ -99,6 +98,17 @@ namespace Ludus.SDK.Framework
              if(this.legenda!=null && Controle.configuracao.txtLegenda!=null)
             {
                 Controle.configuracao.txtLegenda.text = string.Empty;    
+            }
+
+            if (Controle.configuracao.usacursor)
+            {
+
+                Texture2D cursorTexture = Resources.Load<Texture2D>("cursor/padrao");
+
+                if (cursorTexture != null)
+                {
+                    Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+                }
             }
         }
 

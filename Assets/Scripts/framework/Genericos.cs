@@ -5,6 +5,8 @@ namespace Ludus.SDK.Framework
 {
     public class Genericos : MonoBehaviour
     {
+       
+
         //Simplesmente carrega a próxima cena
         //utilzar em transições simples de botão
         public void CarregarCena(string nomeCena)
