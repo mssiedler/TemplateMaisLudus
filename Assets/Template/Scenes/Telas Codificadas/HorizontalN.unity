@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7609177052230196633, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
       propertyPath: formaDeInteracao
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7609177052230196633, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
       propertyPath: usarDimensoesImagens
