@@ -56,11 +56,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Template/Scenes/Telas Codificadas/Horizontal1ComAuxiliar.unity
     guid: 9b194bae0a67823449f20851cacdd9f3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Template/Scenes/Telas Codificadas/Teste.unity
     guid: bbe23e3c79f4c88468df7fef9118f4a2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Template/Scenes/Telas Codificadas/Teste 1.unity
     guid: b8e837e52f002d0429258eb682a07258
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/CliqueSimples.unity
+    guid: ebe6bd2a832ad8c42ab8be9c32b5e66e
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/PegaeSolta.unity
+    guid: c59203a71bb177b479fe52e252e2e22b
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -42,7 +42,7 @@ namespace Ludus.SDK.Framework
 
             #region Popular        
             List<int> indiceSelecionado = this.PopularObjetos();
-
+          
             this.PopularSombras(indiceSelecionado);
             #endregion
 

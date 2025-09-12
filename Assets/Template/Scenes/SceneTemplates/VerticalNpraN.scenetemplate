@@ -37,9 +37,9 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 557053777063313030, guid: b160dac5280d3dd44ac5ac9619b827f2, type: 3}
     instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: b10861325d310f14b9d7b37e682f5ff8, type: 3}
+    instantiationMode: 0
   - dependency: {fileID: 1184178635547026991, guid: 494e09ea6cad157489fe8e940fe5c696, type: 3}
-    instantiationMode: 1
-  - dependency: {fileID: 2800000, guid: 20ea9834eb10c73469faf029d696f8b4, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 3550325044839966444, guid: 05eca42ae3decad4494c08f71120309f, type: 3}
     instantiationMode: 1

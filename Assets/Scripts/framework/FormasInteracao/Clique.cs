@@ -33,16 +33,28 @@ public class Clique : BaseInteracao
 
     void AjustarCollider()
     {
-        BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
-        if (boxCollider == null)
+        BoxCollider2D box = GetComponent<BoxCollider2D>();
+        if (box == null)
         {
-            boxCollider = gameObject.AddComponent<BoxCollider2D>();
+            box = gameObject.AddComponent<BoxCollider2D>();
         }
-        RectTransform rectTransform = GetComponent<RectTransform>();
-        Vector2 tamanho = rectTransform.rect.size;
-        // Define o tamanho do collider com base nas variáveis largura/altura
-        boxCollider.size = tamanho = rectTransform.rect.size;
-        boxCollider.offset = rectTransform.rect.center;
+        //ajusta o colisor ao tamanho da imagem que foi utilizada
+        Image img = GetComponent<Image>();
+
+                // Pega largura e altura da textura original (em pixels)
+        if (img.sprite != null) { 
+            float largura = img.sprite.rect.width;
+            float altura = img.sprite.rect.height;
+
+            // Converter pixels para Unity Units usando pixelsPerUnit
+        
+            Vector2 tamanho2 = new Vector2(largura, altura);
+
+            // Ajusta o collider
+            box.size = tamanho2;
+            box.offset = Vector2.zero;
+        }
+
     }
 
     void OnMouseDown()
@@ -183,4 +195,6 @@ public class Clique : BaseInteracao
     {
             
     }
+
+ 
 }

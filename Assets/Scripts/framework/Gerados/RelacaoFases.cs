@@ -1,6 +1,5 @@
 public enum RelacaoFases
 {
-    amanda2,
     brinquedos,
     cores,
     diferente,
@@ -8,6 +7,7 @@ public enum RelacaoFases
     exemplo,
     exemplotrocado,
     formas,
+    objetos,
     partescorpo,
     pintarfrutas,
 }
