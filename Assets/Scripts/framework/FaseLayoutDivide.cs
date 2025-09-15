@@ -20,7 +20,7 @@ namespace Ludus.SDK.Framework
         public Button botaoTrocaCena;
         //ou é a relação de fases ou é a pasta que vale
         public RelacaoFases fasesDisponiveis; 
-        public string pasta;
+        private string pasta; //troquei por RelacaoFases fasesDispoviveis -- mas deixei para casos de erro e apps antigos
         public string cenaFinal;
         public List<Nivel> niveis;
         [Header("Configurações - Auxiliar")]

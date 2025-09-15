@@ -2,6 +2,7 @@ public enum RelacaoFases
 {
     brinquedos,
     cores,
+    coresComLegenda,
     diferente,
     diferenteParaClique,
     exemplo,

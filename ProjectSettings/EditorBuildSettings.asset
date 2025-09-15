@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Template/Scenes/Telas Codificadas/Inicial.unity
     guid: 7e95e8670a553ac469f11ae849234b56
   - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/Horizontal1.unity
+    path: Assets/Template/Scenes/Telas Codificadas/Escolher/Horizontal1.unity
     guid: cb106c8009b85454e8b61d99e31bc36f
   - enabled: 1
     path: Assets/Template/Scenes/Telas Codificadas/CenaFinalTeste.unity
@@ -45,16 +45,16 @@ EditorBuildSettings:
     path: Assets/Template/Scenes/Telas Codificadas/Creditos.unity
     guid: 27fe45a848cd22f41a013d41584bda62
   - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/Vertical1.unity
+    path: Assets/Template/Scenes/Telas Codificadas/Escolher/Vertical1.unity
     guid: 8e04afa89b0a3c74fa0c79ea0b281245
   - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/HorizontalN.unity
+    path: Assets/Template/Scenes/Telas Codificadas/Escolher/HorizontalN.unity
     guid: d84cc5be1383d14489a441e332abda90
   - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/VerticalN.unity
+    path: Assets/Template/Scenes/Telas Codificadas/Escolher/VerticalN.unity
     guid: 1a829e0bce366a64ca2f3feff6abacc8
   - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/Horizontal1ComAuxiliar.unity
+    path: Assets/Template/Scenes/Telas Codificadas/Auxiliar/Auxiliar.unity
     guid: 9b194bae0a67823449f20851cacdd9f3
   - enabled: 0
     path: Assets/Template/Scenes/Telas Codificadas/Teste.unity
@@ -62,11 +62,38 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Template/Scenes/Telas Codificadas/Teste 1.unity
     guid: b8e837e52f002d0429258eb682a07258
-  - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/CliqueSimples.unity
+  - enabled: 0
+    path: "Assets/Template/Scenes/Telas Codificadas/Formas de Intera\xE7\xE3o/CliqueSimples.unity"
     guid: ebe6bd2a832ad8c42ab8be9c32b5e66e
-  - enabled: 1
-    path: Assets/Template/Scenes/Telas Codificadas/PegaeSolta.unity
+  - enabled: 0
+    path: "Assets/Template/Scenes/Telas Codificadas/Formas de Intera\xE7\xE3o/PegaeSolta.unity"
     guid: c59203a71bb177b479fe52e252e2e22b
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Escolher1.unity
+    guid: a143f40caf2758c4f812ed621b3e977d
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Tutorial/TutorialAuxiliar.unity
+    guid: 4b3888a3c7d2a4c46986b54501d68c6b
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Auxiliar/AuxiliarSubstituir.unity
+    guid: 6200b285bf3b296419faa732c451e585
+  - enabled: 1
+    path: "Assets/Template/Scenes/Telas Codificadas/Formas de Intera\xE7\xE3o/PegaSolta.unity"
+    guid: a2e4f6cf303256040bee6cea11b7771e
+  - enabled: 1
+    path: "Assets/Template/Scenes/Telas Codificadas/Formas de Intera\xE7\xE3o/CliqueSub.unity"
+    guid: 109b04ca4b2b6bd4cb496d082a9f5340
+  - enabled: 1
+    path: "Assets/Template/Scenes/Telas Codificadas/Formas de Intera\xE7\xE3o/Clique.unity"
+    guid: d381aa4c51b96164bb3472a678a74db9
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Tutorial/TutorialFormaInteracao.unity
+    guid: 2a22a92d4b4a3184ca7f3feb3e743b10
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Legenda/Legenda.unity
+    guid: 1c1012fcec3b0e6429f35476bdcbb856
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Divisao Sprite/Divisao.unity
+    guid: a32508319e5ceec458ee1d548cfffe99
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
