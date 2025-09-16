@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: HorizontalN
   m_EditorClassIdentifier: 
   templateScene: {fileID: 102900000, guid: d84cc5be1383d14489a441e332abda90, type: 3}
-  templateName: 
-  description: 
-  preview: {fileID: 0}
+  templateName: Horizontal N-->N
+  description: "Cena pr\xE9 configurada com o os pain\xE9is dispostos um abaixo do
+    outro e com correspond\xEAncia completa entre os elementos da cena."
+  preview: {fileID: 2800000, guid: 6711bce7942648a45b40127394596dcc, type: 3}
   dependencies:
   - dependency: {fileID: 19399374457636879, guid: 1bb453c1dd6c5fd40be15ffac7d984f6, type: 3}
     instantiationMode: 0

@@ -348,6 +348,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 293.8
       objectReference: {fileID: 0}
+    - target: {fileID: 6232128882644597533, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7795016445670771218, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       propertyPath: m_Color.b
       value: 0.92156863
@@ -525,7 +529,8 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1634687458587700113, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8510521506697414854, guid: f038c1dfcaa1c3c4eb426590fd3ca591, type: 3}
       insertIndex: -1

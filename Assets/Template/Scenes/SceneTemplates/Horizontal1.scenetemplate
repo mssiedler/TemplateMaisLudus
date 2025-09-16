@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   templateScene: {fileID: 102900000, guid: cb106c8009b85454e8b61d99e31bc36f, type: 3}
   templateName: 
-  description: 
-  preview: {fileID: 0}
+  description: "Cena pr\xE9 configurada com o os pain\xE9is dispostos um abaixo do
+    outro e a funcionalidade de escolha de um dentre v\xE1rios elementos para encontrar
+    o que corresponde corretamente na cena."
+  preview: {fileID: 2800000, guid: c468764339905a249bd7567bfd70187b, type: 3}
   dependencies:
   - dependency: {fileID: 11400000, guid: 38d54451e36075f478b35278b0cc9f46, type: 2}
     instantiationMode: 1
