@@ -101,5 +101,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Template/Scenes/Telas Codificadas/Tutorial/TutorialDividir.unity
     guid: 6dcdba9e96f07d14a93efb115462fa26
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/ProximoComCursor/ProximoComCursor.unity
+    guid: 6b6083831ce7b24479927fb1b0db0dbe
+  - enabled: 1
+    path: Assets/Template/Scenes/Telas Codificadas/Tutorial/TutorialBtnProximo.unity
+    guid: 4e30675e9f7ae4e4cb4efd6b00f6f3e2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

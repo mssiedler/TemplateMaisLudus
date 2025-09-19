@@ -5,8 +5,13 @@ public class CursorAnimacao : MonoBehaviour
 {
     
     public float intervalo = 5f; // tempo em segundos
+    public GameObject cursor;
 
     void Start()
+    {
+        
+    }
+void OnEnable()
     {
         StartCoroutine(TrocarEstado());
     }
@@ -16,7 +21,8 @@ public class CursorAnimacao : MonoBehaviour
         while (true)
         {
             // inverte o estado atual (ativo/inativo)
-            this.gameObject.SetActive(!this.gameObject.activeSelf);
+            Debug.Log("ativou/desativou");
+            cursor.SetActive(!cursor.activeSelf);
 
             // espera o intervalo definido
             yield return new WaitForSeconds(intervalo);
