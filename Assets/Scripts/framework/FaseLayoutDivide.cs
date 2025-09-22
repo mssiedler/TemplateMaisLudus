@@ -16,7 +16,7 @@ namespace Ludus.SDK.Framework
      {
 
         [Header("Configurações da Fase")]
-        public FormasdeInteracao formaDeInteracao = FormasdeInteracao.DragAndDrop;
+        public FormasdeInteracao formaDeInteracao;
         public Button botaoTrocaCena;
         //ou é a relação de fases ou é a pasta que vale
         public RelacaoFases fasesDisponiveis; 
@@ -92,6 +92,18 @@ namespace Ludus.SDK.Framework
                 Debug.LogWarning("[+LUDUS] Cursor não encontrado em 'Resources/cursor/padrao' .\nCertifique-se de que existe um arquivo chamado padrao na pasta cursor(esse é o nome do arquivo do cursor que irá substituir o cursor padrão).");
                 Controle.configuracao.usacursor = false;
             }
+            //verifica se está usando a forma de interação dinâmica para a fase. 
+            //se sim, troca a forma de interação padrão
+            if (PlayerPrefs.HasKey("formainteracao"))
+            {
+                int escolha = PlayerPrefs.GetInt("formainteracao");
+                this.formaDeInteracao = (FormasdeInteracao)escolha;
+            }
+            else 
+            {
+                this.formaDeInteracao = FormasdeInteracao.DragAndDrop;
+            }
+
 
         }
         protected virtual void CarregarConfiguracao()

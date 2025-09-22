@@ -1,0 +1,2080 @@
+fileFormatVersion: 2
+guid: 6fc5ca80c4925da4db73746a40a0343a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6649643533242250571
+    second: interacaoExemplo_0
+  - first:
+      213: -2948113505608646429
+    second: interacaoExemplo_1
+  - first:
+      213: 3609200701393837342
+    second: interacaoExemplo_2
+  - first:
+      213: -429738745612669607
+    second: interacaoExemplo_3
+  - first:
+      213: 5498625165888640546
+    second: interacaoExemplo_4
+  - first:
+      213: 1602785295050275744
+    second: interacaoExemplo_5
+  - first:
+      213: -4170039093431376655
+    second: interacaoExemplo_6
+  - first:
+      213: 6284178476374221580
+    second: interacaoExemplo_7
+  - first:
+      213: 1447065710311391496
+    second: interacaoExemplo_8
+  - first:
+      213: -5218379342604129958
+    second: interacaoExemplo_9
+  - first:
+      213: -5285323439838688645
+    second: interacaoExemplo_10
+  - first:
+      213: 943007001293471106
+    second: interacaoExemplo_11
+  - first:
+      213: 1226779725674364490
+    second: interacaoExemplo_12
+  - first:
+      213: -5863528623395385888
+    second: interacaoExemplo_13
+  - first:
+      213: 4374169515190928738
+    second: interacaoExemplo_14
+  - first:
+      213: -6824715362753799582
+    second: interacaoExemplo_15
+  - first:
+      213: -4530404879467643954
+    second: interacaoExemplo_16
+  - first:
+      213: -3090837560704932997
+    second: interacaoExemplo_17
+  - first:
+      213: -3014672722370751226
+    second: interacaoExemplo_18
+  - first:
+      213: -6233475168346518051
+    second: interacaoExemplo_19
+  - first:
+      213: -1425408935288450148
+    second: interacaoExemplo_20
+  - first:
+      213: -3387888178021575692
+    second: interacaoExemplo_21
+  - first:
+      213: 6001914111059174347
+    second: interacaoExemplo_22
+  - first:
+      213: -5623903456511715985
+    second: interacaoExemplo_23
+  - first:
+      213: 1310120157304651677
+    second: interacaoExemplo_24
+  - first:
+      213: 4971085910320326204
+    second: interacaoExemplo_25
+  - first:
+      213: 8168370609468965800
+    second: interacaoExemplo_26
+  - first:
+      213: 5163997602145725887
+    second: interacaoExemplo_27
+  - first:
+      213: -8917920196645671018
+    second: interacaoExemplo_28
+  - first:
+      213: 8843117917310945654
+    second: interacaoExemplo_29
+  - first:
+      213: 8883718220427043514
+    second: interacaoExemplo_30
+  - first:
+      213: 5436310892078035617
+    second: interacaoExemplo_31
+  - first:
+      213: 5775486122327323250
+    second: interacaoExemplo_32
+  - first:
+      213: 8243075978765017122
+    second: interacaoExemplo_33
+  - first:
+      213: -9020737242159809206
+    second: interacaoExemplo_34
+  - first:
+      213: -2963931171695571229
+    second: interacaoExemplo_35
+  - first:
+      213: 3479925115764183747
+    second: interacaoExemplo_36
+  - first:
+      213: 1870379307522759277
+    second: interacaoExemplo_37
+  - first:
+      213: -1978728722264537832
+    second: interacaoExemplo_38
+  - first:
+      213: 8484395293391385835
+    second: interacaoExemplo_39
+  - first:
+      213: -3146888898391787442
+    second: interacaoExemplo_40
+  - first:
+      213: 981811297725250542
+    second: interacaoExemplo_41
+  - first:
+      213: -6770473983420680307
+    second: interacaoExemplo_42
+  - first:
+      213: 7200861349465895127
+    second: interacaoExemplo_43
+  - first:
+      213: -7936308149395720047
+    second: interacaoExemplo_44
+  - first:
+      213: -7812745218897394320
+    second: interacaoExemplo_45
+  - first:
+      213: 8187243810496613320
+    second: interacaoExemplo_46
+  - first:
+      213: 2192940219215872556
+    second: interacaoExemplo_47
+  - first:
+      213: -5448912271574615029
+    second: interacaoExemplo_48
+  - first:
+      213: -5158995318349960237
+    second: interacaoExemplo_49
+  - first:
+      213: 1260462892158354731
+    second: interacaoExemplo_50
+  - first:
+      213: -6083631907183061908
+    second: interacaoExemplo_51
+  - first:
+      213: -6892215566220043121
+    second: interacaoExemplo_52
+  - first:
+      213: 7084158796612188841
+    second: interacaoExemplo_53
+  - first:
+      213: -3277570304197394098
+    second: interacaoExemplo_54
+  - first:
+      213: -1820755733082423657
+    second: interacaoExemplo_55
+  - first:
+      213: -476680059657250453
+    second: interacaoExemplo_56
+  - first:
+      213: 6166984555485238984
+    second: interacaoExemplo_57
+  - first:
+      213: 4143572612297167888
+    second: interacaoExemplo_58
+  - first:
+      213: -6241912442110173937
+    second: interacaoExemplo_59
+  - first:
+      213: -6076125737382642098
+    second: interacaoExemplo_60
+  - first:
+      213: -1671668716190489764
+    second: interacaoExemplo_61
+  - first:
+      213: 7804358974164614155
+    second: interacaoExemplo_62
+  - first:
+      213: 7922683616635197954
+    second: interacaoExemplo_63
+  - first:
+      213: 2868004060046830641
+    second: interacaoExemplo_64
+  - first:
+      213: 3752912468588520327
+    second: interacaoExemplo_65
+  - first:
+      213: 519417091199848420
+    second: interacaoExemplo_66
+  - first:
+      213: -4963340168819366863
+    second: interacaoExemplo_67
+  - first:
+      213: -4018774683274533407
+    second: interacaoExemplo_68
+  - first:
+      213: 6093364734764323833
+    second: interacaoExemplo_69
+  - first:
+      213: 4086069342181108670
+    second: interacaoExemplo_70
+  - first:
+      213: -1918014633966689325
+    second: interacaoExemplo_71
+  - first:
+      213: 7006678528968370147
+    second: interacaoExemplo_72
+  - first:
+      213: -382314440998821347
+    second: interacaoExemplo_73
+  - first:
+      213: -3039564121572362916
+    second: interacaoExemplo_74
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: interacaoExemplo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 76
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45b0e9ef87484c50800000000000000
+      internalID: 6649643533242250571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 87
+        width: 79
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e04aace2623617d0800000000000000
+      internalID: -2948113505608646429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_2
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 83
+        width: 87
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d9ba16ae4761230800000000000000
+      internalID: 3609200701393837342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 87
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95de88143e2490af0800000000000000
+      internalID: -429738745612669607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_4
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 87
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226d0d5947a0f4c40800000000000000
+      internalID: 5498625165888640546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_5
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 87
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abf0b2ebbc3e3610800000000000000
+      internalID: 1602785295050275744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_6
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 89
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4e780d98b0126c0800000000000000
+      internalID: -4170039093431376655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_7
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 87
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03e07d7703e53750800000000000000
+      internalID: 6284178476374221580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_8
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 87
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80142cdb892051410800000000000000
+      internalID: 1447065710311391496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_9
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 87
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5928d4d2a79497b0800000000000000
+      internalID: -5218379342604129958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_10
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 87
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a8e559552c6a6b0800000000000000
+      internalID: -5285323439838688645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_11
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 87
+        width: 46
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28dbdc41fdb361d00800000000000000
+      internalID: 943007001293471106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_12
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 83
+        width: 60
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4eb87629a5660110800000000000000
+      internalID: 1226779725674364490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_13
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 85
+        width: 69
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0edce2888cf80aea0800000000000000
+      internalID: -5863528623395385888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_14
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 87
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2654c4caffb24bc30800000000000000
+      internalID: 4374169515190928738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_15
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 87
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26a98e5598db941a0800000000000000
+      internalID: -6824715362753799582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_16
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 87
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecb72a6e3c4c021c0800000000000000
+      internalID: -4530404879467643954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_17
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 87
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b736fbf4d932b15d0800000000000000
+      internalID: -3090837560704932997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_18
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 87
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6051805a12bb926d0800000000000000
+      internalID: -3014672722370751226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_19
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 87
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dddcc7a5c5f3e79a0800000000000000
+      internalID: -6233475168346518051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_20
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 87
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93d670202ee73ce0800000000000000
+      internalID: -1425408935288450148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_21
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 87
+        width: 45
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f35742e6adcbf0d0800000000000000
+      internalID: -3387888178021575692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_22
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 87
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc32612a5151b4350800000000000000
+      internalID: 6001914111059174347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_23
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 82
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65178f5a91e3f1b0800000000000000
+      internalID: -5623903456511715985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_24
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 87
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ff83d775b7e2210800000000000000
+      internalID: 1310120157304651677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_25
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 87
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c36a7982c48dcf440800000000000000
+      internalID: 4971085910320326204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_26
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 81
+        width: 74
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3832b9ac1eb5170800000000000000
+      internalID: 8168370609468965800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_27
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 81
+        width: 98
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd6dd885743aa740800000000000000
+      internalID: 5163997602145725887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_28
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 81
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f27af84de2d3480800000000000000
+      internalID: -8917920196645671018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_29
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 87
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 679063894e019ba70800000000000000
+      internalID: 8843117917310945654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_30
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 87
+        width: 66
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2283d47ae494b70800000000000000
+      internalID: 8883718220427043514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_31
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 87
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2f5ea14f7a17b40800000000000000
+      internalID: 5436310892078035617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_32
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 81
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272b4864706a62050800000000000000
+      internalID: 5775486122327323250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_33
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 84
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22028d2dde9456270800000000000000
+      internalID: 8243075978765017122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_34
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 87
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d7deca547efc280800000000000000
+      internalID: -9020737242159809206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_35
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 87
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eec06c8d400ed6d0800000000000000
+      internalID: -2963931171695571229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_36
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 50
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c29512947d2b4030800000000000000
+      internalID: 3479925115764183747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_37
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 50
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a922c021ce4f910800000000000000
+      internalID: 1870379307522759277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_38
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 50
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8154f8af5b42a84e0800000000000000
+      internalID: -1978728722264537832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_39
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 50
+        width: 55
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4f69c2190aeb570800000000000000
+      internalID: 8484395293391385835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_40
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 52
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48bcb748310454d0800000000000000
+      internalID: -3146888898391787442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_41
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 44
+        width: 63
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebf0656c2810ad00800000000000000
+      internalID: 981811297725250542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_42
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 50
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d87bf2998c17a02a0800000000000000
+      internalID: -6770473983420680307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_43
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 50
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d031cbde399ee360800000000000000
+      internalID: 7200861349465895127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_44
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 50
+        width: 76
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198fa3759c19cd190800000000000000
+      internalID: -7936308149395720047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_45
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 50
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0754dfafd9d839390800000000000000
+      internalID: -7812745218897394320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_46
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 50
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb8a262edeee9170800000000000000
+      internalID: 8187243810496613320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_47
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 50
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22870cb283ee6e10800000000000000
+      internalID: 2192940219215872556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_48
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 50
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c378898239164b0800000000000000
+      internalID: -5448912271574615029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_49
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 50
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dbe8db67119768b0800000000000000
+      internalID: -5158995318349960237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_50
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 50
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2509ab72501e7110800000000000000
+      internalID: 1260462892158354731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_51
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 50
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c641f1c4309929ba0800000000000000
+      internalID: -6083631907183061908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_52
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 48
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c5904857ee950a0800000000000000
+      internalID: -6892215566220043121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_53
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 50
+        width: 70
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa378c54ecff4260800000000000000
+      internalID: 7084158796612188841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_54
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 52
+        width: 6
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4102f37c2bb382d0800000000000000
+      internalID: -3277570304197394098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_55
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 50
+        width: 31
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ebddabe406bb6e0800000000000000
+      internalID: -1820755733082423657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_56
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 50
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b691e94e20e7269f0800000000000000
+      internalID: -476680059657250453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_57
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 50
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6940577c7859550800000000000000
+      internalID: 6166984555485238984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_58
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 50
+        width: 70
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0149209565de08930800000000000000
+      internalID: 4143572612297167888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_59
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 50
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d9ee874b54069a0800000000000000
+      internalID: -6241912442110173937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_60
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 50
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ef2b4a5d34daba0800000000000000
+      internalID: -6076125737382642098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_61
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 50
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c532555d82a0dc8e0800000000000000
+      internalID: -1671668716190489764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_62
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 50
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cb6b24327ae4c60800000000000000
+      internalID: 7804358974164614155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_63
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 50
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a195de5c603fd60800000000000000
+      internalID: 7922683616635197954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_64
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 44
+        width: 68
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c287d4f723dc720800000000000000
+      internalID: 2868004060046830641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_65
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 52
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7836a53a106051430800000000000000
+      internalID: 3752912468588520327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_66
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 50
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efcb3ba717553700800000000000000
+      internalID: 519417091199848420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_67
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 50
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1342812d96cae1bb0800000000000000
+      internalID: -4963340168819366863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_68
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 45
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5a61bc7b17a38c0800000000000000
+      internalID: -4018774683274533407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_69
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 50
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3158631faff8450800000000000000
+      internalID: 6093364734764323833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_70
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 50
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebba154fa62a4b830800000000000000
+      internalID: 4086069342181108670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_71
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 50
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d32a6c3ad7d165e0800000000000000
+      internalID: -1918014633966689325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_72
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 50
+        width: 37
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e72486cff8bc3160800000000000000
+      internalID: 7006678528968370147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_73
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 50
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1263cf9a0fb1baf0800000000000000
+      internalID: -382314440998821347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: interacaoExemplo_74
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 50
+        width: 68
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5538a5298c41d5d0800000000000000
+      internalID: -3039564121572362916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      interacaoExemplo_0: 6649643533242250571
+      interacaoExemplo_1: -2948113505608646429
+      interacaoExemplo_10: -5285323439838688645
+      interacaoExemplo_11: 943007001293471106
+      interacaoExemplo_12: 1226779725674364490
+      interacaoExemplo_13: -5863528623395385888
+      interacaoExemplo_14: 4374169515190928738
+      interacaoExemplo_15: -6824715362753799582
+      interacaoExemplo_16: -4530404879467643954
+      interacaoExemplo_17: -3090837560704932997
+      interacaoExemplo_18: -3014672722370751226
+      interacaoExemplo_19: -6233475168346518051
+      interacaoExemplo_2: 3609200701393837342
+      interacaoExemplo_20: -1425408935288450148
+      interacaoExemplo_21: -3387888178021575692
+      interacaoExemplo_22: 6001914111059174347
+      interacaoExemplo_23: -5623903456511715985
+      interacaoExemplo_24: 1310120157304651677
+      interacaoExemplo_25: 4971085910320326204
+      interacaoExemplo_26: 8168370609468965800
+      interacaoExemplo_27: 5163997602145725887
+      interacaoExemplo_28: -8917920196645671018
+      interacaoExemplo_29: 8843117917310945654
+      interacaoExemplo_3: -429738745612669607
+      interacaoExemplo_30: 8883718220427043514
+      interacaoExemplo_31: 5436310892078035617
+      interacaoExemplo_32: 5775486122327323250
+      interacaoExemplo_33: 8243075978765017122
+      interacaoExemplo_34: -9020737242159809206
+      interacaoExemplo_35: -2963931171695571229
+      interacaoExemplo_36: 3479925115764183747
+      interacaoExemplo_37: 1870379307522759277
+      interacaoExemplo_38: -1978728722264537832
+      interacaoExemplo_39: 8484395293391385835
+      interacaoExemplo_4: 5498625165888640546
+      interacaoExemplo_40: -3146888898391787442
+      interacaoExemplo_41: 981811297725250542
+      interacaoExemplo_42: -6770473983420680307
+      interacaoExemplo_43: 7200861349465895127
+      interacaoExemplo_44: -7936308149395720047
+      interacaoExemplo_45: -7812745218897394320
+      interacaoExemplo_46: 8187243810496613320
+      interacaoExemplo_47: 2192940219215872556
+      interacaoExemplo_48: -5448912271574615029
+      interacaoExemplo_49: -5158995318349960237
+      interacaoExemplo_5: 1602785295050275744
+      interacaoExemplo_50: 1260462892158354731
+      interacaoExemplo_51: -6083631907183061908
+      interacaoExemplo_52: -6892215566220043121
+      interacaoExemplo_53: 7084158796612188841
+      interacaoExemplo_54: -3277570304197394098
+      interacaoExemplo_55: -1820755733082423657
+      interacaoExemplo_56: -476680059657250453
+      interacaoExemplo_57: 6166984555485238984
+      interacaoExemplo_58: 4143572612297167888
+      interacaoExemplo_59: -6241912442110173937
+      interacaoExemplo_6: -4170039093431376655
+      interacaoExemplo_60: -6076125737382642098
+      interacaoExemplo_61: -1671668716190489764
+      interacaoExemplo_62: 7804358974164614155
+      interacaoExemplo_63: 7922683616635197954
+      interacaoExemplo_64: 2868004060046830641
+      interacaoExemplo_65: 3752912468588520327
+      interacaoExemplo_66: 519417091199848420
+      interacaoExemplo_67: -4963340168819366863
+      interacaoExemplo_68: -4018774683274533407
+      interacaoExemplo_69: 6093364734764323833
+      interacaoExemplo_7: 6284178476374221580
+      interacaoExemplo_70: 4086069342181108670
+      interacaoExemplo_71: -1918014633966689325
+      interacaoExemplo_72: 7006678528968370147
+      interacaoExemplo_73: -382314440998821347
+      interacaoExemplo_74: -3039564121572362916
+      interacaoExemplo_8: 1447065710311391496
+      interacaoExemplo_9: -5218379342604129958
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
