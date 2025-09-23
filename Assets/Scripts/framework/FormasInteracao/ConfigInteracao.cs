@@ -7,8 +7,11 @@ public class ConfigInteracao : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Button ArrastaESolta, PegaESolta, CliqueSimples;
+    private Color cororiginal;
     void Start()
     {
+        //pega a cor original dos botões
+        cororiginal = ArrastaESolta.GetComponent<Image>().color;
         if (PlayerPrefs.HasKey("formainteracao"))
         {
             int escolha = PlayerPrefs.GetInt("formainteracao");
@@ -28,8 +31,9 @@ public class ConfigInteracao : MonoBehaviour
             }
         }
         //parei aqui
-        ArrastaESolta.onClick.AddListener(() => SelecionarFormaInteracao(FormasdeInteracao.DragAndDrop));
-        CliqueSimples.onClick.AddListener(() => SelecionarFormaInteracao(FormasdeInteracao.DragAndDrop));
+        ArrastaESolta.onClick.AddListener(() => SelecionarFormaInteracao(0));
+        CliqueSimples.onClick.AddListener(() => SelecionarFormaInteracao(1));
+        PegaESolta.onClick.AddListener(() => SelecionarFormaInteracao(2));
     }
 
     // Update is called once per frame
@@ -38,8 +42,29 @@ public class ConfigInteracao : MonoBehaviour
         
     }
 
-    void SelecionarFormaInteracao(FormasdeInteracao forma) 
+    void SelecionarFormaInteracao(int forma)
     {
-        PlayerPrefs.SetInt("formainteracao", Convert.ToInt32(forma));
+        PlayerPrefs.SetInt("formainteracao", forma);
+        Debug.Log(forma);
+         switch (forma)
+        {
+            case 0:
+                ArrastaESolta.GetComponent<Image>().color = Color.green;
+                CliqueSimples.GetComponent<Image>().color = cororiginal;
+                PegaESolta.GetComponent<Image>().color = cororiginal;
+                break;
+            case 1:
+                ArrastaESolta.GetComponent<Image>().color = cororiginal;
+                CliqueSimples.GetComponent<Image>().color = Color.green;
+                PegaESolta.GetComponent<Image>().color = cororiginal;
+                break;
+            case 2:
+                ArrastaESolta.GetComponent<Image>().color = cororiginal;
+                CliqueSimples.GetComponent<Image>().color = cororiginal;
+                PegaESolta.GetComponent<Image>().color = Color.green;
+                break;
+            default:
+                break;
+        }
     }
 }
