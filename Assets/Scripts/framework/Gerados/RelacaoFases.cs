@@ -11,4 +11,6 @@ public enum RelacaoFases
     objetos,
     partescorpo,
     pintarfrutas,
+    timesFase1,
+    timesFase2,
 }
