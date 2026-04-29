@@ -475,6 +475,10 @@ PrefabInstance:
       value: formas
       objectReference: {fileID: 0}
     - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
+      propertyPath: monitorarCena
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5685273953027557557, guid: 9260809cdf371864a97a250eda9e767d, type: 3}
       propertyPath: fasesDisponiveis
       value: 7
       objectReference: {fileID: 0}
